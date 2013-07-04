@@ -1,0 +1,74 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "PartnerInfoModel",
+        "storeId": "partnerInfoStore",
+        "designer|userClassName": "PartnerInfoStore"
+    },
+    "designerId": "1d019931-5adf-4dd7-bd21-496744b84d68",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PartnerSearchProxy",
+                "url": "http://raspi-lolo.dyndns.org:8888/json-restlet-example-web/jsonREST/V1.0/PsPartnerSuche/execute?partnerName=Muster&partnerVorname=Hans",
+                "recordParam": null
+            },
+            "designerId": "9edc71df-1243-4084-a6a7-1c45a9528737",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "response.partnerInfos.info",
+                        "designer|displayName": "PartnerSearchReader"
+                    },
+                    "designerId": "29385fc1-949b-4cdb-bbb7-97cf22b2464e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "de0821ea-5790-42d4-8646-594b564087f9",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return item.get('partnerName').substring(0,1);"
+                        ]
+                    },
+                    "designerId": "a95e5178-d7bf-4dd9-97eb-875419b5e6a6"
+                }
+            ]
+        }
+    ]
+}

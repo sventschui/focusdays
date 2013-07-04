@@ -1,0 +1,41 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PartnerSearchView",
+        "designer|userAlias": "partnersearchview"
+    },
+    "designerId": "6610b108-799f-4ec9-812d-8b0105b57741",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Name",
+                "name": "name"
+            },
+            "designerId": "09eeef3b-a999-47a0-93a1-aece882279a6"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "searchButton",
+                "text": "Suchen"
+            },
+            "designerId": "f7c137ff-5c08-490f-b3ad-c1d23d5ab1c5"
+        }
+    ]
+}

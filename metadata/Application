@@ -1,0 +1,26 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "PartnerInfoModel"
+        ],
+        "stores": [
+            "PartnerInfoStore"
+        ],
+        "views": [
+            "PartnerSearchView",
+            "MainNavigation",
+            "PartnerList"
+        ],
+        "controllers": [
+            "PartnerSearchController"
+        ],
+        "name": "Partner"
+    },
+    "designerId": "application"
+}

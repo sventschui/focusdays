@@ -1,0 +1,90 @@
+{
+    "name": "partnerSearch",
+    "settings": {
+        "urlPrefix": "http://localhost/~sven/axa/focusdays2013-senchatouch/",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "6610b108-799f-4ec9-812d-8b0105b57741": {
+            "paths": [
+                "metadata/view/PartnerSearchView",
+                "app/view/override/PartnerSearchView.js",
+                "app/view/PartnerSearchView.js"
+            ],
+            "className": "PartnerSearchView"
+        },
+        "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
+            "paths": [
+                "metadata/view/MainNavigation",
+                "app/view/override/MainNavigation.js",
+                "app/view/MainNavigation.js"
+            ],
+            "className": "MainNavigation"
+        },
+        "10632338-afd4-4c3b-be14-03d40c68fee1": {
+            "paths": [
+                "metadata/controller/PartnerSearchController",
+                "app/controller/override/PartnerSearchController.js",
+                "app/controller/PartnerSearchController.js"
+            ],
+            "className": "PartnerSearchController"
+        },
+        "d9faadd0-22cf-42be-a745-62f587c63a72": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "cb9788eb-532d-4d2c-923f-70eec58b6c31": {
+            "paths": [
+                "metadata/model/PartnerInfoModel",
+                "app/model/override/PartnerInfoModel.js",
+                "app/model/PartnerInfoModel.js"
+            ],
+            "className": "PartnerInfoModel"
+        },
+        "1d019931-5adf-4dd7-bd21-496744b84d68": {
+            "paths": [
+                "metadata/store/PartnerInfoStore",
+                "app/store/override/PartnerInfoStore.js",
+                "app/store/PartnerInfoStore.js"
+            ],
+            "className": "PartnerInfoStore"
+        },
+        "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd": {
+            "paths": [
+                "metadata/view/PartnerList",
+                "app/view/override/PartnerList.js",
+                "app/view/PartnerList.js"
+            ],
+            "className": "PartnerList"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "6610b108-799f-4ec9-812d-8b0105b57741",
+            "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
+            "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd"
+        ],
+        "store": [
+            "1d019931-5adf-4dd7-bd21-496744b84d68"
+        ],
+        "controller": [
+            "10632338-afd4-4c3b-be14-03d40c68fee1"
+        ],
+        "model": [
+            "cb9788eb-532d-4d2c-923f-70eec58b6c31"
+        ],
+        "resource": [
+            "d9faadd0-22cf-42be-a745-62f587c63a72"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

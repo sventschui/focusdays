@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PartnerSearchController"
+    },
+    "designerId": "10632338-afd4-4c3b-be14-03d40c68fee1",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var store = Ext.getStore(\"partnerInfoStore\");\r",
+                    "\r",
+                    "store.removeAll();\r",
+                    "\r",
+                    "var partnerList = button.up(\"#mainNavigation\").push({\r",
+                    "    xtype: 'partnerList',\r",
+                    "    title: 'partnerList'\r",
+                    "});\r",
+                    "\r",
+                    "store.load();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#searchButton"
+            },
+            "designerId": "4469123e-4047-4658-9489-6cc58641b1ac"
+        }
+    ]
+}

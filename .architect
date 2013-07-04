@@ -1,0 +1,129 @@
+{
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true,
+        "6610b108-799f-4ec9-812d-8b0105b57741": {
+            "id": "6610b108-799f-4ec9-812d-8b0105b57741",
+            "cn": [
+                {
+                    "id": "09eeef3b-a999-47a0-93a1-aece882279a6"
+                },
+                {
+                    "id": "f7c137ff-5c08-490f-b3ad-c1d23d5ab1c5"
+                }
+            ]
+        },
+        "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
+            "id": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
+            "cn": [
+                {
+                    "id": "2d3a49cc-bb91-4e08-b5d9-222368ab458d"
+                }
+            ]
+        },
+        "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd": {
+            "id": "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
+            "cn": [
+                {
+                    "id": "fdb09810-fa07-47c2-8a6e-6218f7485b5b"
+                },
+                {
+                    "id": "ff28e14c-5544-46de-aa57-af9a6e833052"
+                }
+            ]
+        },
+        "1d019931-5adf-4dd7-bd21-496744b84d68": {
+            "id": "1d019931-5adf-4dd7-bd21-496744b84d68",
+            "cn": [
+                {
+                    "id": "9edc71df-1243-4084-a6a7-1c45a9528737",
+                    "cn": [
+                        {
+                            "id": "29385fc1-949b-4cdb-bbb7-97cf22b2464e"
+                        }
+                    ]
+                },
+                {
+                    "id": "de0821ea-5790-42d4-8646-594b564087f9",
+                    "cn": [
+                        {
+                            "id": "a95e5178-d7bf-4dd9-97eb-875419b5e6a6"
+                        }
+                    ]
+                }
+            ]
+        },
+        "cb9788eb-532d-4d2c-923f-70eec58b6c31": {
+            "id": "cb9788eb-532d-4d2c-923f-70eec58b6c31",
+            "cn": [
+                {
+                    "id": "b6bdd2f5-45d0-45ac-9ef9-9a41a01ae409"
+                },
+                {
+                    "id": "0f96248c-bd65-435c-9c81-b4e2c2608967"
+                },
+                {
+                    "id": "cb06605a-6e98-4e1d-a4d5-5b5cdc19986e"
+                },
+                {
+                    "id": "87746504-13ac-4ac9-b9fc-d9b6f22a6ae5"
+                },
+                {
+                    "id": "bf5bdd58-67c5-48d3-bc8c-bcfb29939e65"
+                },
+                {
+                    "id": "4885e639-1a5e-4004-be8e-abe56746cdc0"
+                },
+                {
+                    "id": "d2d034d7-5186-4cc6-875d-dbd098eb37d1"
+                },
+                {
+                    "id": "b3c32e0b-a1ff-4263-a7dc-7f231f4e10b1"
+                },
+                {
+                    "id": "ebde618e-b585-4e8e-89fc-3998ad22d46e"
+                },
+                {
+                    "id": "f8ca2bd7-a718-4d6f-bac2-ac850c9e04bf"
+                },
+                {
+                    "id": "1c2dc4f5-de52-4114-8844-7644065cfde0"
+                },
+                {
+                    "id": "3f830d49-885d-45d9-a129-b4cb1d793935"
+                },
+                {
+                    "id": "84c3fd7e-b538-42b5-8324-48adb0d66ad7"
+                }
+            ]
+        },
+        "10632338-afd4-4c3b-be14-03d40c68fee1": {
+            "id": "10632338-afd4-4c3b-be14-03d40c68fee1",
+            "cn": [
+                {
+                    "id": "4469123e-4047-4658-9489-6cc58641b1ac"
+                }
+            ]
+        },
+        "d9faadd0-22cf-42be-a745-62f587c63a72": {
+            "id": "d9faadd0-22cf-42be-a745-62f587c63a72"
+        }
+    },
+    "tabState": {
+        "openTabs": []
+    },
+    "canvasState": {
+        "topInstance": null
+    },
+    "inspectorState": {
+        "topInstance": null,
+        "selectedInstance": null
+    },
+    "codeState": {
+        "topInstance": null
+    },
+    "editMode": "code"
+}
