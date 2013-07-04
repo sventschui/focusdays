@@ -39,11 +39,11 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    "var settings = Ext.getStore('settingsStore');\r",
-                    "\r",
-                    "if(settings.data.length === 0) {\r",
-                    "    settings.add(new Partner.model.Settings());\r",
-                    "}\r",
+                    "var settings = Ext.getStore('settingsStore');",
+                    "",
+                    "if(settings.data.length === 0) {",
+                    "    settings.add(new Partner.model.Settings());",
+                    "}",
                     ""
                 ]
             },
