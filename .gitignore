@@ -4,3 +4,8 @@ CVS
 app
 .settings
 .project
+.sencha
+build
+packages
+touch
+resources/sass/.sass-cache

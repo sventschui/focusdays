@@ -7,8 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "id": "mainNavigation",
-        "designer|userClassName": "MainNavigation",
-        "designer|initialView": true
+        "designer|userClassName": "MainNavigation"
     },
     "designerId": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
     "cn": [

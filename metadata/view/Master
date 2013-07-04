@@ -1,0 +1,164 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Master",
+        "designer|userAlias": "Master",
+        "designer|initialView": true,
+        "layout": "hbox"
+    },
+    "designerId": "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "id": "navigation",
+                "width": "250px",
+                "layout": "card"
+            },
+            "designerId": "249379a7-96e9-4bfe-8a99-9cc013820bcc",
+            "cn": [
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "Übersicht"
+                    },
+                    "designerId": "da514d28-1f46-4fbc-851c-75a128439a4c"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<p>Navigation item</p>",
+                        "id": "navigation-content",
+                        "padding": "0.5em",
+                        "scrollable": "vertical"
+                    },
+                    "designerId": "149fc1df-a607-4f7a-9fc4-3ea1ebaf9493"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "slide"
+                ],
+                "height": "100%",
+                "id": "main",
+                "left": 0,
+                "width": "100%",
+                "zIndex": 5,
+                "layout": "card"
+            },
+            "designerId": "9cde728a-788f-41f4-b197-40085755ba7a",
+            "cn": [
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "id": "main-toolbar",
+                        "ui": "light",
+                        "title": "Partnersuche"
+                    },
+                    "designerId": "a8593a15-de25-440e-a231-7590bc728b6d",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "mybutton",
+                                "text": "Open"
+                            },
+                            "designerId": "7ad11e0d-c2fa-4b34-8afc-58006d5ba2cb",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMybuttonTap",
+                                        "implHandler": [
+                                            "if (Ext.getCmp('navigation').isHidden()) {",
+                                            "            Ext.getCmp('navigation').show();   ",
+                                            "        }",
+                                            "",
+                                            "",
+                                            "        var main = Ext.get('main');",
+                                            "",
+                                            "",
+                                            "        if (main.hasCls('out')) {",
+                                            "            main.removeCls('out');",
+                                            "            main.addCls('in'); ",
+                                            "            button.setText('Open');",
+                                            "        } else {",
+                                            "            main.removeCls('in');    ",
+                                            "            main.addCls('out');    ",
+                                            "            button.setText('Close');         ",
+                                            "        }",
+                                            "  "
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "58251ebc-b7a1-4865-bcfb-035caa8c5790"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": null,
+                        "id": "item-example",
+                        "padding": "0.5em",
+                        "scrollable": true
+                    },
+                    "designerId": "dc0104e8-65f2-4734-90fb-9c607226fe7b"
+                }
+            ]
+        }
+    ]
+}
