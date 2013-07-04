@@ -47,18 +47,8 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    "// Settings\r",
-                    "Partner.controller.SettingsProvider.init();\r",
-                    "\r",
-                    "// Initiales Laden: Nicht unbedingt nötig\r",
-                    "var pos = [\r",
-                    "    'PoPartnerDetail',\r",
-                    "    'PoPartnerInfo',\r",
-                    "    'PartnerSucheView',\r",
-                    "    'PartnerDetailView'\r",
-                    "];\r",
-                    "\r",
-                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'));\r",
+                    "// Settings",
+                    "Partner.controller.SettingsProvider.init();",
                     ""
                 ]
             },

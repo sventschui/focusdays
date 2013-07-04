@@ -53,16 +53,6 @@ Ext.application({
         // Settings
         Partner.controller.SettingsProvider.init();
 
-        // Initiales Laden: Nicht unbedingt nötig
-        var pos = [
-        'PoPartnerDetail',
-        'PoPartnerInfo',
-        'PartnerSucheView',
-        'PartnerDetailView'
-        ];
-
-        Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'));
-
         Ext.create('Partner.view.MainNavigation', {fullscreen: true});
     }
 
