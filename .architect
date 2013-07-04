@@ -5,6 +5,14 @@
         "component": true,
         "controller": true,
         "resource": true,
+        "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
+            "id": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
+            "cn": [
+                {
+                    "id": "2d3a49cc-bb91-4e08-b5d9-222368ab458d"
+                }
+            ]
+        },
         "6610b108-799f-4ec9-812d-8b0105b57741": {
             "id": "6610b108-799f-4ec9-812d-8b0105b57741",
             "expanded": false,
