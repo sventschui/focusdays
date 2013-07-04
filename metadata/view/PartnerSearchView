@@ -21,7 +21,10 @@
             "userConfig": {
                 "id": "search_name",
                 "itemId": null,
-                "label": "PoPartnerSucheKriterien.partnerName"
+                "label": "PoPartnerSucheKriterien.partnerName",
+                "value": [
+                    "'Muster'"
+                ]
             },
             "designerId": "3d8105c9-7447-4c27-8770-b6890fc3c2f8",
             "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -35,7 +38,10 @@
             "codeClass": null,
             "userConfig": {
                 "id": "search_prename",
-                "label": "PoPartnerSucheKriterien.partnerVorname"
+                "label": "PoPartnerSucheKriterien.partnerVorname",
+                "value": [
+                    "'Hans'"
+                ]
             },
             "designerId": "f587383d-8bf4-47db-b57a-94bd5f304693",
             "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -132,6 +138,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "searchButton",
+                "itemId": "metadataButton",
                 "text": "PartnerSucheView.sucheButton"
             },
             "designerId": "61226a8e-aefc-46e9-a355-69ebb5dc13b3",
