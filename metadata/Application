@@ -27,11 +27,11 @@
             "PartnerDetailView"
         ],
         "requires": [
-            "Partner.controller.MetadataProvider"
+            "Partner.controller.MetadataProvider",
+            "Partner.controller.SettingsProvider"
         ],
         "controllers": [
-            "PartnerSearchController",
-            "SettingsProvider"
+            "PartnerSearchController"
         ],
         "name": "Partner"
     },
@@ -47,25 +47,18 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    "// Settings",
-                    "var settingsStore = Ext.getStore('settingsStore');",
-                    "",
-                    "if (settingsStore.data.length === 0) {",
-                    "    // Neues settings objekt",
-                    "\tsettingsStore.data.add(new Partner.model.Settings());",
-                    "} ",
-                    "",
-                    "var mdProvider = new Partner.controller.MetadataProvider();",
-                    "",
-                    "// Initiales Laden: Nicht unbedingt nötig",
-                    "var pos = [",
-                    "    'PoPartnerDetail',",
-                    "    'PoPartnerInfo',",
-                    "    'PartnerSucheView',",
-                    "    'PartnerDetailView'",
-                    "];",
-                    "",
-                    "mdProvider.load(pos, settingsStore.data.first().get('locale'));",
+                    "// Settings\r",
+                    "Partner.controller.SettingsProvider.init();\r",
+                    "\r",
+                    "// Initiales Laden: Nicht unbedingt nötig\r",
+                    "var pos = [\r",
+                    "    'PoPartnerDetail',\r",
+                    "    'PoPartnerInfo',\r",
+                    "    'PartnerSucheView',\r",
+                    "    'PartnerDetailView'\r",
+                    "];\r",
+                    "\r",
+                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'));\r",
                     ""
                 ]
             },

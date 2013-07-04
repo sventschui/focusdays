@@ -21,7 +21,8 @@ Ext.Loader.setConfig({
 Ext.application({
 
     requires: [
-        'Partner.controller.MetadataProvider'
+        'Partner.controller.MetadataProvider',
+        'Partner.controller.SettingsProvider'
     ],
     models: [
         'PartnerInfoModel',
@@ -44,21 +45,13 @@ Ext.application({
         'PartnerDetailView'
     ],
     controllers: [
-        'PartnerSearchController',
-        'SettingsProvider'
+        'PartnerSearchController'
     ],
     name: 'Partner',
 
     launch: function() {
         // Settings
-        var settingsStore = Ext.getStore('settingsStore');
-
-        if (settingsStore.data.length === 0) {
-            // Neues settings objekt
-            settingsStore.data.add(new Partner.model.Settings());
-        }
-
-        var mdProvider = new Partner.controller.MetadataProvider();
+        Partner.controller.SettingsProvider.init();
 
         // Initiales Laden: Nicht unbedingt nötig
         var pos = [
@@ -68,10 +61,9 @@ Ext.application({
         'PartnerDetailView'
         ];
 
-        mdProvider.load(pos, settingsStore.data.first().get('locale'));
+        Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'));
 
         Ext.create('Partner.view.MainNavigation', {fullscreen: true});
     }
 
 });
-
