@@ -7,29 +7,17 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "PartnerInfoModel",
-            "PresentationObject",
-            "Property",
-            "PropertyText",
-            "Settings"
+            "PartnerInfoModel"
         ],
         "stores": [
-            "PartnerInfoStore",
-            "MetadataStore",
-            "SettingsStore"
+            "PartnerInfoStore"
         ],
         "views": [
             "PartnerSearchView",
             "MainNavigation",
             "PartnerList",
             "MetadataTextField",
-            "MetadataButton",
-            "PartnerDetailView",
-            "Master"
-        ],
-        "requires": [
-            "Partner.controller.MetadataProvider",
-            "Partner.controller.SettingsProvider"
+            "MetadataButton"
         ],
         "controllers": [
             "PartnerSearchController"
@@ -48,12 +36,10 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    "// Settings",
-                    "Partner.controller.SettingsProvider.init();",
                     ""
                 ]
             },
-            "designerId": "2ae7eca4-f003-49fe-ad1e-738d81df74d7"
+            "designerId": "76fa7cb9-be6d-47c5-ae7b-c4c40c0ca7bb"
         }
     ]
 }

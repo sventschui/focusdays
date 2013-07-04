@@ -42,7 +42,8 @@ Ext.application({
         'PartnerList',
         'MetadataTextField',
         'MetadataButton',
-        'PartnerDetailView'
+        'PartnerDetailView',
+        'Master'
     ],
     controllers: [
         'PartnerSearchController'
@@ -53,7 +54,8 @@ Ext.application({
         // Settings
         Partner.controller.SettingsProvider.init();
 
-        Ext.create('Partner.view.MainNavigation', {fullscreen: true});
+        Ext.create('Partner.view.Master', {fullscreen: true});
+>>>>>>> FETCH_HEAD
     }
 
 });
