@@ -2,7 +2,12 @@
     "name": "partnerSearch",
     "settings": {
         "urlPrefix": "http://localhost/~sven/axa/focusdays2013-senchatouch/",
-        "exportPath": ""
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.2.2",
     "xdsBuild": 991,

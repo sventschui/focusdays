@@ -24,21 +24,22 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "init",
+                "fn": "onTextfieldMetadataLoaded",
+                "designer|params": [
+                    "textfield"
+                ],
                 "implHandler": [
-                    "component.setLabelCls(component.getLabel());\r",
-                    "\r",
-                    "var parts = component.getLabel().split(\".\");\r",
-                    "\r",
-                    "this.setLabel(Partner.controller.MetadataProvider.getLabel(\r",
-                    "    parts[0], \r",
-                    "    parts[1], \r",
-                    "    Partner.controller.SettingsProvider.getSetting('locale')\r",
+                    "var parts = component.getLabelCls().split(\".\");",
+                    "",
+                    "this.setLabel(Partner.controller.MetadataProvider.label(",
+                    "    parts[0], ",
+                    "    parts[1], ",
+                    "    Partner.controller.SettingsProvider.getSetting('locale')",
                     "));"
                 ],
-                "name": "initialize"
+                "name": "metadataLoaded"
             },
-            "designerId": "bc35fc8e-ad48-4bfc-bb05-4da637827c62"
+            "designerId": "05f89187-6caf-48a5-a880-57b323cee27d"
         }
     ]
 }
