@@ -12,12 +12,34 @@
                     "id": "3d8105c9-7447-4c27-8770-b6890fc3c2f8"
                 },
                 {
-                    "id": "1d4fd3fd-d5c6-498e-b6a0-df2539ec5c3b"
+                    "id": "f587383d-8bf4-47db-b57a-94bd5f304693"
+                },
+                {
+                    "id": "5e9aec92-dc6b-4766-b826-2e23409a4137"
+                },
+                {
+                    "id": "0866edf2-2517-44f4-a19b-23e019eeea2d"
+                },
+                {
+                    "id": "bc378836-60ce-4b20-b65c-406c41c30b6f"
+                },
+                {
+                    "id": "22f0c000-4f58-4328-9b8f-4c6869995ecd"
+                },
+                {
+                    "id": "d13d57c1-b445-4a29-b093-7eecf0ee2c5d"
+                },
+                {
+                    "id": "2ed236cf-7b58-493e-8b04-16f0125d3245"
+                },
+                {
+                    "id": "61226a8e-aefc-46e9-a355-69ebb5dc13b3"
                 }
             ]
         },
         "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
             "id": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
+            "expanded": false,
             "cn": [
                 {
                     "id": "2d3a49cc-bb91-4e08-b5d9-222368ab458d"
@@ -26,6 +48,7 @@
         },
         "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd": {
             "id": "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
+            "expanded": false,
             "cn": [
                 {
                     "id": "fdb09810-fa07-47c2-8a6e-6218f7485b5b"
@@ -37,6 +60,7 @@
         },
         "a91ee4c1-41e4-4338-a5b5-c425010453ac": {
             "id": "a91ee4c1-41e4-4338-a5b5-c425010453ac",
+            "expanded": false,
             "cn": [
                 {
                     "id": "bc35fc8e-ad48-4bfc-bb05-4da637827c62"
@@ -53,6 +77,7 @@
         },
         "1d019931-5adf-4dd7-bd21-496744b84d68": {
             "id": "1d019931-5adf-4dd7-bd21-496744b84d68",
+            "expanded": false,
             "cn": [
                 {
                     "id": "9edc71df-1243-4084-a6a7-1c45a9528737",
@@ -131,10 +156,9 @@
     },
     "tabState": {
         "openTabs": [
+            "10632338-afd4-4c3b-be14-03d40c68fee1",
             "6610b108-799f-4ec9-812d-8b0105b57741",
-            "application",
-            "a91ee4c1-41e4-4338-a5b5-c425010453ac",
-            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e"
+            "a91ee4c1-41e4-4338-a5b5-c425010453ac"
         ]
     },
     "canvasState": {
