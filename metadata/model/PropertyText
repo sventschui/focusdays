@@ -1,0 +1,66 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PropertyText"
+    },
+    "designerId": "d7ec15a2-74d3-4685-9d3d-b31d6974dd55",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "locale",
+                "type": "string"
+            },
+            "designerId": "87b56a65-c479-4e44-afa9-b0db7b6eee42"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text",
+                "type": "string"
+            },
+            "designerId": "d36709da-f30d-4ae8-82d3-6b643e426cae"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wikiText",
+                "type": "string"
+            },
+            "designerId": "e9a04d34-68a3-4c9f-ab1b-8c0f9fd5bbcb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "tag",
+                "type": "string"
+            },
+            "designerId": "24d69eeb-73b6-41f6-b909-d3d481080f33"
+        }
+    ]
+}
