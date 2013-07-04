@@ -87,6 +87,14 @@
                 "app/view/PartnerDetailView.js"
             ],
             "className": "PartnerDetailView"
+        },
+        "b1a5144f-21ef-4c0d-a05b-767ee3ef9889": {
+            "paths": [
+                "metadata/controller/SettingsProvider",
+                "app/controller/override/SettingsProvider.js",
+                "app/controller/SettingsProvider.js"
+            ],
+            "className": "SettingsProvider"
         }
     },
     "viewOrderMap": {
@@ -102,7 +110,8 @@
             "1d019931-5adf-4dd7-bd21-496744b84d68"
         ],
         "controller": [
-            "10632338-afd4-4c3b-be14-03d40c68fee1"
+            "10632338-afd4-4c3b-be14-03d40c68fee1",
+            "b1a5144f-21ef-4c0d-a05b-767ee3ef9889"
         ],
         "model": [
             "cb9788eb-532d-4d2c-923f-70eec58b6c31"

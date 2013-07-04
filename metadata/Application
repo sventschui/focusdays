@@ -22,7 +22,8 @@
             "MyFormPanel"
         ],
         "controllers": [
-            "PartnerSearchController"
+            "PartnerSearchController",
+            "SettingsProvider"
         ],
         "name": "Partner"
     },

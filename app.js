@@ -31,11 +31,12 @@ Ext.application({
         'PartnerList',
         'MetadataTextField',
         'MetadataButton',
-        null,
-        'PartnerDetailView'
+        'PartnerDetailView',
+        'MyFormPanel'
     ],
     controllers: [
-        'PartnerSearchController'
+        'PartnerSearchController',
+        'SettingsProvider'
     ],
     name: 'Partner',
 
