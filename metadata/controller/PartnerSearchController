@@ -29,6 +29,10 @@
                     "    title: 'partnerList'\r",
                     "});\r",
                     "\r",
+                    "var name = Ext.getCmp('name').getValue();\r",
+                    "var preName = Ext.getCmp('preName').getValue();\r",
+                    "\r",
+                    "store.getProxy().setUrl('http://raspi-lolo.dyndns.org:8888/json-restlet-example-web/jsonREST/V1.0/PsPartnerSuche/execute?partnerName='+name+'&partnerVorname='+preName);\r",
                     "store.load();"
                 ],
                 "name": "tap",

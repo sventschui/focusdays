@@ -19,10 +19,24 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Name",
+                "id": "name",
+                "itemId": null,
+                "label": "Nachname",
                 "name": "name"
             },
             "designerId": "09eeef3b-a999-47a0-93a1-aece882279a6"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Vorname"
+            },
+            "designerId": "8f168bc2-40ee-4e98-908a-68b9846f87d6"
         },
         {
             "type": "Ext.Button",
@@ -36,6 +50,136 @@
                 "text": "Suchen"
             },
             "designerId": "f7c137ff-5c08-490f-b3ad-c1d23d5ab1c5"
+        },
+        {
+            "type": "Ext.field.Number",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "PartnerNr"
+            },
+            "designerId": "66423dc2-bee5-437b-bb54-77e44e69af29"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Strasse"
+            },
+            "designerId": "d2fc260f-28ba-420b-b27f-bb5cbcc683a3"
+        },
+        {
+            "type": "Ext.field.Number",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Hausnummer"
+            },
+            "designerId": "b2ae601d-b7c7-42c7-8143-5dc4d830e473"
+        },
+        {
+            "type": "Ext.field.Number",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "PLZ"
+            },
+            "designerId": "053502b3-beef-43e9-bbeb-17540444cf7b"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Ort"
+            },
+            "designerId": "fc740880-a333-416e-8354-54105b8c752c"
+        },
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Geschlecht",
+                "options": [
+                    "[\r",
+                    "                        {text: 'Alle',  value: 'first'},\r",
+                    "                        {text: 'Männlich', value: 'second'},\r",
+                    "                        {text: 'Weiblich',  value: 'third'},\r",
+                    "    \t\t\t\t\t{text: 'Neutral',  value: 'third'}\r",
+                    "                    ]"
+                ]
+            },
+            "designerId": "7d552437-cccc-4a85-9d7f-b7e002f77aec"
+        },
+        {
+            "type": "Ext.field.DatePicker",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Field",
+                "placeHolder": "mm/dd/yyyy"
+            },
+            "designerId": "1ea8ba9f-40b3-4704-bfa1-9ad058608538",
+            "cn": [
+                {
+                    "type": "Ext.picker.Date",
+                    "reference": {
+                        "name": "picker",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "f691d40d-dd10-44b9-89d4-b9e2a9997624",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "doneButton",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Done"
+                            },
+                            "designerId": "7a7c2399-4a71-4a7e-83d4-aa81a6fc2bf9"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "cancelButton",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Cancel"
+                            },
+                            "designerId": "31d6e926-55da-4016-944b-b2be67a98f52"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
