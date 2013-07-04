@@ -1,0 +1,45 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "PartnerInfoModel"
+        ],
+        "stores": [
+            "PartnerInfoStore"
+        ],
+        "views": [
+            "PartnerSearchView",
+            "MainNavigation",
+            "PartnerList",
+            "MetadataTextField",
+            "MetadataButton"
+        ],
+        "controllers": [
+            "PartnerSearchController"
+        ],
+        "name": "Partner"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "76fa7cb9-be6d-47c5-ae7b-c4c40c0ca7bb"
+        }
+    ]
+}

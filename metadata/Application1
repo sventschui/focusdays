@@ -24,8 +24,7 @@
             "PartnerList",
             "MetadataTextField",
             "MetadataButton",
-            "PartnerDetailView",
-            "Master"
+            "PartnerDetailView"
         ],
         "requires": [
             "Partner.controller.MetadataProvider",
