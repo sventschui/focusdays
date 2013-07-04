@@ -1,0 +1,91 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MetadataProvider"
+    },
+    "designerId": "b3becc8c-fe30-482c-a7a6-6ecd8b708311",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "load",
+                "designer|params": [
+                    "pos",
+                    "locale"
+                ],
+                "implHandler": [
+                    "var mdStore = Ext.getStore(\"metadataStore\");",
+                    "",
+                    "mdStore.load({",
+                    "    params: {",
+                    "        poList: pos.join(),",
+                    "        locale: locale",
+                    "    }",
+                    "});",
+                    ""
+                ]
+            },
+            "designerId": "94163354-61c5-44f0-99fe-b548979bda2f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "label",
+                "designer|params": [
+                    "poName",
+                    "propertyName",
+                    "locale"
+                ],
+                "implHandler": [
+                    "",
+                    "var mdStore = Ext.getStore(\"metadataStore\");",
+                    "",
+                    "// PO nachladen falls nicht vorhanden",
+                    "if (mdStore.find('name', poName) !== 1) {",
+                    "\tload([poName], locale);",
+                    "}",
+                    "",
+                    "// PO finden",
+                    "var po = mdStore.findRecord('name', poName);",
+                    "",
+                    "if (po === undefined) {",
+                    "\treturn \"[PO NOT FOUND]\";",
+                    "}",
+                    "",
+                    "// Property holen",
+                    "var properties = po.properties();",
+                    "",
+                    "var property = properties.findRecord('name', propertyName);",
+                    "",
+                    "if (property === undefined) {",
+                    "\treturn \"[Property not found]\";",
+                    "}",
+                    "",
+                    "// Texte holen",
+                    "var texts = property.propertyTexts",
+                    "",
+                    "var text = texts.findRecord('tag', 'label');",
+                    "",
+                    "return text.get('text');",
+                    ""
+                ]
+            },
+            "designerId": "6c24621a-828e-41d8-8346-37aff70693c4"
+        }
+    ]
+}
