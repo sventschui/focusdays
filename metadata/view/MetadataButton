@@ -22,7 +22,7 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    "component.setLabel('123');"
+                    "component.setText('123');"
                 ],
                 "name": "initialize"
             },
