@@ -7,20 +7,65 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "PartnerInfoModel"
+            "PartnerInfoModel",
+            "PresentationObject",
+            "Property",
+            "PropertyText",
+            "Settings"
         ],
         "stores": [
-            "PartnerInfoStore"
+            "PartnerInfoStore",
+            "MetadataStore",
+            "SettingsStore"
         ],
         "views": [
             "PartnerSearchView",
             "MainNavigation",
             "PartnerList"
         ],
+        "requires": [
+            "Partner.controller.MetadataProvider"
+        ],
         "controllers": [
             "PartnerSearchController"
         ],
         "name": "Partner"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "// Settings",
+                    "var settingsStore = Ext.getStore('settingsStore');",
+                    "",
+                    "if (settingsStore.data.length === 0) {",
+                    "    // Neues settings objekt",
+                    "\tsettingsStore.data.add(new Partner.model.Settings());",
+                    "} ",
+                    "",
+                    "var mdProvider = new Partner.controller.MetadataProvider();",
+                    "",
+                    "// Initiales Laden: Nicht unbedingt nötig",
+                    "var pos = [",
+                    "    'PoPartnerDetail',",
+                    "    'PoPartnerInfo',",
+                    "    'PartnerSucheView',",
+                    "    'PartnerDetailView'",
+                    "];",
+                    "",
+                    "mdProvider.load(pos, settingsStore.data.first().get('locale'));",
+                    ""
+                ]
+            },
+            "designerId": "2ae7eca4-f003-49fe-ad1e-738d81df74d7"
+        }
+    ]
 }

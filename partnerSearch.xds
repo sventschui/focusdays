@@ -63,6 +63,62 @@
                 "app/view/PartnerList.js"
             ],
             "className": "PartnerList"
+        },
+        "82eaec2e-658e-4849-b89d-4a87aaa29b22": {
+            "paths": [
+                "metadata/store/MetadataStore",
+                "app/store/override/MetadataStore.js",
+                "app/store/MetadataStore.js"
+            ],
+            "className": "MetadataStore"
+        },
+        "a5f7ccfe-e8d3-4caa-9ab9-d8ebd7fd65b5": {
+            "paths": [
+                "metadata/model/PresentationObject",
+                "app/model/override/PresentationObject.js",
+                "app/model/PresentationObject.js"
+            ],
+            "className": "PresentationObject"
+        },
+        "1f93c6f4-ff85-4369-954c-ea3ff6f25d09": {
+            "paths": [
+                "metadata/model/Property",
+                "app/model/override/Property.js",
+                "app/model/Property.js"
+            ],
+            "className": "Property"
+        },
+        "d7ec15a2-74d3-4685-9d3d-b31d6974dd55": {
+            "paths": [
+                "metadata/model/PropertyText",
+                "app/model/override/PropertyText.js",
+                "app/model/PropertyText.js"
+            ],
+            "className": "PropertyText"
+        },
+        "b3becc8c-fe30-482c-a7a6-6ecd8b708311": {
+            "paths": [
+                "metadata/controller/MetadataProvider",
+                "app/controller/override/MetadataProvider.js",
+                "app/controller/MetadataProvider.js"
+            ],
+            "className": "MetadataProvider"
+        },
+        "72bba0be-d3ef-462a-ba90-37e88fdca97c": {
+            "paths": [
+                "metadata/model/Settings",
+                "app/model/override/Settings.js",
+                "app/model/Settings.js"
+            ],
+            "className": "Settings"
+        },
+        "4b5df94d-b108-4b77-9719-4771a31e4ea4": {
+            "paths": [
+                "metadata/store/SettingsStore",
+                "app/store/override/SettingsStore.js",
+                "app/store/SettingsStore.js"
+            ],
+            "className": "SettingsStore"
         }
     },
     "viewOrderMap": {
@@ -72,13 +128,20 @@
             "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd"
         ],
         "store": [
-            "1d019931-5adf-4dd7-bd21-496744b84d68"
+            "1d019931-5adf-4dd7-bd21-496744b84d68",
+            "82eaec2e-658e-4849-b89d-4a87aaa29b22",
+            "4b5df94d-b108-4b77-9719-4771a31e4ea4"
         ],
         "controller": [
-            "10632338-afd4-4c3b-be14-03d40c68fee1"
+            "10632338-afd4-4c3b-be14-03d40c68fee1",
+            "b3becc8c-fe30-482c-a7a6-6ecd8b708311"
         ],
         "model": [
-            "cb9788eb-532d-4d2c-923f-70eec58b6c31"
+            "cb9788eb-532d-4d2c-923f-70eec58b6c31",
+            "a5f7ccfe-e8d3-4caa-9ab9-d8ebd7fd65b5",
+            "1f93c6f4-ff85-4369-954c-ea3ff6f25d09",
+            "d7ec15a2-74d3-4685-9d3d-b31d6974dd55",
+            "72bba0be-d3ef-462a-ba90-37e88fdca97c"
         ],
         "resource": [
             "d9faadd0-22cf-42be-a745-62f587c63a72"
