@@ -1,0 +1,56 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SettingsProvider",
+        "singleton": true
+    },
+    "designerId": "b1a5144f-21ef-4c0d-a05b-767ee3ef9889",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getSetting",
+                "designer|params": [
+                    "key"
+                ],
+                "implHandler": [
+                    "return settings.get(key);"
+                ]
+            },
+            "designerId": "d3304205-b322-4507-944a-cb4cbea4d277"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "var settings = Ext.getStore('settingsStore');\r",
+                    "\r",
+                    "if(settings.data.length === 0) {\r",
+                    "    settings.add(new Partner.model.Settings());\r",
+                    "}\r",
+                    ""
+                ]
+            },
+            "designerId": "1346dd1f-f0cf-42c0-9676-f7694a171776"
+        }
+    ]
+}

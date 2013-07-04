@@ -1,0 +1,32 @@
+{
+    "type": "Ext.Button",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MetadataButton",
+        "designer|userAlias": "metadataButton",
+        "text": "MyButton1"
+    },
+    "designerId": "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "component.setText('123');"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "eea8c1b7-ff69-4599-b946-14f735912a87"
+        }
+    ]
+}

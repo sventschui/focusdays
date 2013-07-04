@@ -38,10 +38,14 @@ Ext.application({
     views: [
         'PartnerSearchView',
         'MainNavigation',
-        'PartnerList'
+        'PartnerList',
+        'MetadataTextField',
+        'MetadataButton',
+        'PartnerDetailView'
     ],
     controllers: [
-        'PartnerSearchController'
+        'PartnerSearchController',
+        'SettingsProvider'
     ],
     name: 'Partner',
 
@@ -70,3 +74,4 @@ Ext.application({
     }
 
 });
+
