@@ -302,7 +302,8 @@
             "b3becc8c-fe30-482c-a7a6-6ecd8b708311",
             "a91ee4c1-41e4-4338-a5b5-c425010453ac",
             "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd",
-            "application"
+            "application",
+            "10632338-afd4-4c3b-be14-03d40c68fee1"
         ]
     },
     "canvasState": {
@@ -313,7 +314,7 @@
         "selectedInstance": "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd"
     },
     "codeState": {
-        "topInstance": "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd"
+        "topInstance": "10632338-afd4-4c3b-be14-03d40c68fee1"
     },
     "editMode": "code"
 }

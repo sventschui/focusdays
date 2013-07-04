@@ -26,7 +26,15 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    ""
+                    "component.setLabelCls(component.getLabel());\r",
+                    "\r",
+                    "var parts = component.getLabel().split(\".\");\r",
+                    "\r",
+                    "this.setLabel(Partner.controller.MetadataProvider.getLabel(\r",
+                    "    parts[0], \r",
+                    "    parts[1], \r",
+                    "    Partner.controller.SettingsProvider.getSetting('locale')\r",
+                    "));"
                 ],
                 "name": "initialize"
             },
