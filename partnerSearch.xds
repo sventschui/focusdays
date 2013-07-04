@@ -179,10 +179,27 @@
                 "app/view/MainNavigation.js"
             ],
             "className": "MainNavigation"
+        },
+        "b2f41405-c061-41ac-b729-aee8f934ea27": {
+            "paths": [
+                "metadata/view/IntroSplash",
+                "app/view/override/IntroSplash.js",
+                "app/view/IntroSplash.js"
+            ],
+            "className": "IntroSplash"
+        },
+        "925168ca-9f8d-4d08-96b5-51e61cc602d5": {
+            "paths": [
+                "metadata/controller/IntroViewC",
+                "app/controller/override/IntroViewC.js",
+                "app/controller/IntroViewC.js"
+            ],
+            "className": "IntroViewC"
         }
     },
     "viewOrderMap": {
         "view": [
+            "b2f41405-c061-41ac-b729-aee8f934ea27",
             "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
             "6610b108-799f-4ec9-812d-8b0105b57741",
             "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
@@ -197,6 +214,7 @@
             "4b5df94d-b108-4b77-9719-4771a31e4ea4"
         ],
         "controller": [
+            "925168ca-9f8d-4d08-96b5-51e61cc602d5",
             "10632338-afd4-4c3b-be14-03d40c68fee1",
             "b3becc8c-fe30-482c-a7a6-6ecd8b708311",
             "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd"

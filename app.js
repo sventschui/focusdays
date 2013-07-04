@@ -43,7 +43,8 @@ Ext.application({
         'MetadataTextField',
         'MetadataButton',
         'PartnerDetailView',
-        'Master'
+        'Master',
+        'IntroSplash'
     ],
     controllers: [
         'PartnerSearchController'
@@ -55,13 +56,19 @@ Ext.application({
         Partner.controller.SettingsProvider.init();
 
         // Loading screen
+        Ext.Viewport.add([
+        { xtype: 'introSplash' }
+        ]);
 
         var pos = [
         'dsfdsfdsf'
         ];
 
         Partner.controller.MetadataProvider.load(pos, '', function () {
-            // Remove screen
+            console.log("response received");
+            Ext.Viewport.setActiveItem([
+            { xtype: 'Master' }
+            ]);
 
 
         });

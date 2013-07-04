@@ -11,6 +11,10 @@
   -webkit-transform: translateX(0px);
 }
 
+.black-bg {
+    background-color : black !important;
+}
+
 @-webkit-keyframes slideOut {
   from { -webkit-transform: translateX(0px); }
   to { -webkit-transform: translateX(250px); }
