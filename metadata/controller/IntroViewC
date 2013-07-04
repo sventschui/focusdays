@@ -1,0 +1,12 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "IntroViewC"
+    },
+    "designerId": "925168ca-9f8d-4d08-96b5-51e61cc602d5"
+}

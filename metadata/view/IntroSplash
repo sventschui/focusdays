@@ -1,0 +1,28 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "IntroSplash",
+        "designer|initialView": true
+    },
+    "designerId": "b2f41405-c061-41ac-b729-aee8f934ea27",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "src": "resources/icons/loading.gif"
+            },
+            "designerId": "93dd5748-5bfd-4a99-8b88-0f756d5da9f1"
+        }
+    ]
+}
