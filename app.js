@@ -30,7 +30,9 @@ Ext.application({
         'MainNavigation',
         'PartnerList',
         'MetadataTextField',
-        'MetadataButton'
+        'MetadataButton',
+        null,
+        'PartnerDetailView'
     ],
     controllers: [
         'PartnerSearchController'

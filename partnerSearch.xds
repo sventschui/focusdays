@@ -79,6 +79,14 @@
                 "app/view/MetadataButton.js"
             ],
             "className": "MetadataButton"
+        },
+        "82b49327-8792-4091-a9ad-da6b8e0e0e91": {
+            "paths": [
+                "metadata/view/PartnerDetailView",
+                "app/view/override/PartnerDetailView.js",
+                "app/view/PartnerDetailView.js"
+            ],
+            "className": "PartnerDetailView"
         }
     },
     "viewOrderMap": {
@@ -87,7 +95,8 @@
             "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
             "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
             "a91ee4c1-41e4-4338-a5b5-c425010453ac",
-            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e"
+            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
+            "82b49327-8792-4091-a9ad-da6b8e0e0e91"
         ],
         "store": [
             "1d019931-5adf-4dd7-bd21-496744b84d68"
