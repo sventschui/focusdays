@@ -1,0 +1,44 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "PresentationObject",
+        "storeId": "metadataStore",
+        "designer|userClassName": "MetadataStore"
+    },
+    "designerId": "82eaec2e-658e-4849-b89d-4a87aaa29b22",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "MetadataProxy",
+                "url": "http://raspi-lolo.dyndns.org:8888/json-restlet-example-web/jsonREST/V1.0/PsMetadata/execute"
+            },
+            "designerId": "390f7f0c-b3d0-4e44-8206-dc89c06a9028",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "list.po",
+                        "designer|displayName": "MetadataReader"
+                    },
+                    "designerId": "ebb6804e-1752-46d4-8adc-0b6eb4b816bf"
+                }
+            ]
+        }
+    ]
+}
