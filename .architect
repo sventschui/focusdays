@@ -5,6 +5,14 @@
         "component": true,
         "controller": true,
         "resource": true,
+        "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
+            "id": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
+            "cn": [
+                {
+                    "id": "2d3a49cc-bb91-4e08-b5d9-222368ab458d"
+                }
+            ]
+        },
         "6610b108-799f-4ec9-812d-8b0105b57741": {
             "id": "6610b108-799f-4ec9-812d-8b0105b57741",
             "expanded": false,
@@ -123,6 +131,7 @@
         },
         "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b": {
             "id": "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b",
+            "expanded": false,
             "cn": [
                 {
                     "id": "249379a7-96e9-4bfe-8a99-9cc013820bcc",
@@ -261,6 +270,7 @@
         },
         "1f93c6f4-ff85-4369-954c-ea3ff6f25d09": {
             "id": "1f93c6f4-ff85-4369-954c-ea3ff6f25d09",
+            "expanded": false,
             "cn": [
                 {
                     "id": "1cfb4bd2-9e8b-4fdc-a98e-951962b2b691"

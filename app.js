@@ -38,7 +38,7 @@ Ext.application({
     ],
     views: [
         'PartnerSearchView',
-        null,
+        'MainNavigation',
         'PartnerList',
         'MetadataTextField',
         'MetadataButton',
