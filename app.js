@@ -55,7 +55,6 @@ Ext.application({
         Partner.controller.SettingsProvider.init();
 
         Ext.create('Partner.view.Master', {fullscreen: true});
->>>>>>> FETCH_HEAD
     }
 
 });
