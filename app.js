@@ -38,7 +38,7 @@ Ext.application({
     ],
     views: [
         'PartnerSearchView',
-        null,
+        'MainNavigation',
         'PartnerList',
         'MetadataTextField',
         'MetadataButton',
@@ -54,8 +54,19 @@ Ext.application({
         // Settings
         Partner.controller.SettingsProvider.init();
 
+        // Loading screen
+
+        var pos = [
+        'dsfdsfdsf'
+        ];
+
+        Partner.controller.MetadataProvider.load(pos, '', function () {
+            // Remove screen
+
+
+        });
+
         Ext.create('Partner.view.Master', {fullscreen: true});
->>>>>>> FETCH_HEAD
     }
 
 });

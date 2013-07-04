@@ -22,17 +22,21 @@
                 "fn": "load",
                 "designer|params": [
                     "pos",
-                    "locale"
+                    "locale",
+                    "callback"
                 ],
                 "implHandler": [
-                    "var mdStore = Ext.getStore(\"metadataStore\");\r",
-                    "\r",
-                    "mdStore.load({\r",
-                    "    params: {\r",
-                    "        poList: pos.join(),\r",
-                    "        locale: locale\r",
-                    "    }\r",
-                    "});\r",
+                    "var mdStore = Ext.getStore(\"metadataStore\");",
+                    "",
+                    "mdStore.load({",
+                    "    params: {",
+                    "        poList: pos.join(),",
+                    "        locale: locale",
+                    "    },",
+                    "    callback: function (records, operation, success) {",
+                    "        callback();",
+                    "    }",
+                    "});",
                     ""
                 ]
             },

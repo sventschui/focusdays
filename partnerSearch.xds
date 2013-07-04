@@ -1,7 +1,7 @@
 {
     "name": "partnerSearch",
     "settings": {
-        "urlPrefix": "http://localhost/~sven/axa/focusdays2013-senchatouch/",
+        "urlPrefix": "http://focusdays/",
         "exportPath": "C:/xampp/htdocs/partnerSearchNew/focusdays",
         "sdkPath": "C:/Program Files (x86)/sencha-touch-2.2.1-commercial (1)/touch-2.2.1",
         "spacesToIndent": 4,

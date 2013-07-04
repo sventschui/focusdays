@@ -32,9 +32,9 @@
                     "var parts = component.getLabelCls().split(\".\");",
                     "",
                     "this.setLabel(Partner.controller.MetadataProvider.label(",
-                    "    parts[0], ",
-                    "    parts[1], ",
-                    "    Partner.controller.SettingsProvider.getSetting('locale')",
+                    "parts[0], ",
+                    "parts[1], ",
+                    "Partner.controller.SettingsProvider.getSetting('locale')",
                     "));"
                 ],
                 "name": "metadataLoaded"

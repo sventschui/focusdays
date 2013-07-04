@@ -50,6 +50,18 @@
                 "implHandler": [
                     "// Settings",
                     "Partner.controller.SettingsProvider.init();",
+                    "",
+                    "// Loading screen",
+                    "",
+                    "var pos = [",
+                    "\t'dsfdsfdsf'",
+                    "];",
+                    "",
+                    "Partner.controller.MetadataProvider.load(pos, '', function () {",
+                    "\t// Remove screen",
+                    "    ",
+                    "    ",
+                    "});",
                     ""
                 ]
             },
