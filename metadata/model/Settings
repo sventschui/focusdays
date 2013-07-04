@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Settings"
+    },
+    "designerId": "72bba0be-d3ef-462a-ba90-37e88fdca97c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "SettingsProxy"
+            },
+            "designerId": "be1982ba-4c9a-4648-9d90-11a7ec9f098e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultValue": [
+                    "\"de\""
+                ],
+                "name": "locale",
+                "type": "string"
+            },
+            "designerId": "43c25d84-11ae-4df3-9446-596c31d697af"
+        }
+    ]
+}
