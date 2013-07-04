@@ -35,6 +35,25 @@
             },
             "codeClass": null,
             "designerId": "ff28e14c-5544-46de-aa57-af9a6e833052"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListSelect",
+                "implHandler": [
+                    "var partnerDetail = dataview.up(\"#mainNavigation\").push({",
+                    "    xtype: 'partnerDetail',",
+                    "    title: 'partnerDetail'",
+                    "});"
+                ],
+                "name": "select"
+            },
+            "designerId": "36c18465-9506-43d9-ba79-c6e2d840f612"
         }
     ]
 }
