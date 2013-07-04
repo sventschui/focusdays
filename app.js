@@ -28,7 +28,9 @@ Ext.application({
     views: [
         'PartnerSearchView',
         'MainNavigation',
-        'PartnerList'
+        'PartnerList',
+        'MetadataTextField',
+        'MetadataButton'
     ],
     controllers: [
         'PartnerSearchController'

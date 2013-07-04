@@ -9,10 +9,10 @@
             "id": "6610b108-799f-4ec9-812d-8b0105b57741",
             "cn": [
                 {
-                    "id": "09eeef3b-a999-47a0-93a1-aece882279a6"
+                    "id": "3d8105c9-7447-4c27-8770-b6890fc3c2f8"
                 },
                 {
-                    "id": "f7c137ff-5c08-490f-b3ad-c1d23d5ab1c5"
+                    "id": "1d4fd3fd-d5c6-498e-b6a0-df2539ec5c3b"
                 }
             ]
         },
@@ -32,6 +32,22 @@
                 },
                 {
                     "id": "ff28e14c-5544-46de-aa57-af9a6e833052"
+                }
+            ]
+        },
+        "a91ee4c1-41e4-4338-a5b5-c425010453ac": {
+            "id": "a91ee4c1-41e4-4338-a5b5-c425010453ac",
+            "cn": [
+                {
+                    "id": "bc35fc8e-ad48-4bfc-bb05-4da637827c62"
+                }
+            ]
+        },
+        "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e": {
+            "id": "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
+            "cn": [
+                {
+                    "id": "eea8c1b7-ff69-4599-b946-14f735912a87"
                 }
             ]
         },
@@ -58,6 +74,7 @@
         },
         "cb9788eb-532d-4d2c-923f-70eec58b6c31": {
             "id": "cb9788eb-532d-4d2c-923f-70eec58b6c31",
+            "expanded": false,
             "cn": [
                 {
                     "id": "b6bdd2f5-45d0-45ac-9ef9-9a41a01ae409"
@@ -113,10 +130,15 @@
         }
     },
     "tabState": {
-        "openTabs": []
+        "openTabs": [
+            "6610b108-799f-4ec9-812d-8b0105b57741",
+            "application",
+            "a91ee4c1-41e4-4338-a5b5-c425010453ac",
+            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e"
+        ]
     },
     "canvasState": {
-        "topInstance": null
+        "topInstance": "6610b108-799f-4ec9-812d-8b0105b57741"
     },
     "inspectorState": {
         "topInstance": null,
@@ -125,5 +147,5 @@
     "codeState": {
         "topInstance": null
     },
-    "editMode": "code"
+    "editMode": "design"
 }
