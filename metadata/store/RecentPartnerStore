@@ -1,0 +1,14 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "PartnerInfoModel",
+        "storeId": "recentPartnerStore",
+        "designer|userClassName": "RecentPartnerStore"
+    },
+    "designerId": "f961c98b-1a2d-403b-b88b-8cb501caa75a"
+}

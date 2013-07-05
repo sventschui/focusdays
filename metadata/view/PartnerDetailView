@@ -32,8 +32,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "itemId": "detail_partnerNr",
-                        "label": "",
+                        "id": "detail_partnerNr",
+                        "itemId": null,
+                        "label": null,
                         "labelCls": "PoPartnerDetail.partnerNr",
                         "name": "partnerNr",
                         "readOnly": true

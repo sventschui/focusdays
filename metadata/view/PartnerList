@@ -51,7 +51,9 @@
                     "    title: 'partnerDetail'",
                     "});",
                     "",
-                    "partnerDetail.setValues(record.raw);"
+                    "partnerDetail.setValues(record.raw);",
+                    "",
+                    "Ext.getStore('recentPartnerStore').add(record);"
                 ],
                 "name": "select"
             },

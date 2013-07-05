@@ -11,6 +11,18 @@
     "designerId": "cb9788eb-532d-4d2c-923f-70eec58b6c31",
     "cn": [
         {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "RecentPartnerProxy"
+            },
+            "designerId": "b642db46-76af-439d-88fe-118874bf639c"
+        },
+        {
             "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
