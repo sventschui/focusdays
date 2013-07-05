@@ -16,7 +16,8 @@
         "stores": [
             "PartnerInfoStore",
             "MetadataStore",
-            "SettingsStore"
+            "SettingsStore",
+            "RecentPartnerStore"
         ],
         "views": [
             "PartnerSearchView",

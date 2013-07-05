@@ -195,6 +195,22 @@
                 "packager1.json"
             ],
             "className": "packager1"
+        },
+        "f961c98b-1a2d-403b-b88b-8cb501caa75a": {
+            "paths": [
+                "metadata/store/RecentPartnerStore",
+                "app/store/override/RecentPartnerStore.js",
+                "app/store/RecentPartnerStore.js"
+            ],
+            "className": "RecentPartnerStore"
+        },
+        "9aeb6e31-b311-48cb-9308-ad1015db2b74": {
+            "paths": [
+                "metadata/resource/packager",
+                "",
+                "packager.json"
+            ],
+            "className": "packager"
         }
     },
     "viewOrderMap": {
@@ -209,6 +225,7 @@
             "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b"
         ],
         "store": [
+            "f961c98b-1a2d-403b-b88b-8cb501caa75a",
             "1d019931-5adf-4dd7-bd21-496744b84d68",
             "82eaec2e-658e-4849-b89d-4a87aaa29b22",
             "4b5df94d-b108-4b77-9719-4771a31e4ea4"
@@ -227,6 +244,7 @@
             "72bba0be-d3ef-462a-ba90-37e88fdca97c"
         ],
         "resource": [
+            "9aeb6e31-b311-48cb-9308-ad1015db2b74",
             "d9faadd0-22cf-42be-a745-62f587c63a72",
             "abb84c57-1e7b-44ba-9987-db378e987fcd",
             "da7630e6-cf3a-43b3-8acf-d3678348e59d"
