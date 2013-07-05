@@ -31,14 +31,18 @@
                     "",
                     "var self = this;",
                     "",
-                    "MetadataProvider.addListener('change', function () {",
-                    "\tconsole.log(self.getLabelCls());",
+                    "var updateLabel = function () {",
+                    "    console.log(self.getLabelCls());",
                     "    var parts = self.getLabelCls().split(\".\");",
-                    "\tvar locale = SettingsProvider.getSetting('locale');",
+                    "    var locale = SettingsProvider.getSetting('locale');",
                     "    var label = MetadataProvider.getLabel(parts[0], parts[1], locale);",
-                    "    ",
-                    "\tself.setLabel(label);",
-                    "});"
+                    "",
+                    "    self.setLabel(label);",
+                    "};",
+                    "",
+                    "updateLabel();",
+                    "",
+                    "MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
             "designerId": "f34ff76e-26c3-4fb7-b468-0550f2d5adab"
