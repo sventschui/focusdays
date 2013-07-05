@@ -54,13 +54,13 @@
                     "// Loading screen",
                     "",
                     "var pos = [",
-                    "\t'dsfdsfdsf'",
+                    "\t'PoPartnerSucheKriterien'",
                     "];",
                     "",
-                    "Partner.controller.MetadataProvider.load(pos, '', function () {",
-                    "\t// Remove screen",
-                    "    ",
-                    "    ",
+                    "Partner.controller.MetadataProvider.load(pos, 'de', function () {",
+                    "    // Remove screen",
+                    "",
+                    "",
                     "});",
                     ""
                 ]

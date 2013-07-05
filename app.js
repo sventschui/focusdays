@@ -57,10 +57,10 @@ Ext.application({
         // Loading screen
 
         var pos = [
-        'dsfdsfdsf'
+        'PoPartnerSucheKriterien'
         ];
 
-        Partner.controller.MetadataProvider.load(pos, '', function () {
+        Partner.controller.MetadataProvider.load(pos, 'de', function () {
             // Remove screen
 
 
