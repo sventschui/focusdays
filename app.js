@@ -56,20 +56,21 @@ Ext.application({
         Partner.controller.SettingsProvider.init();
 
         // Loading screen
-        Ext.Viewport.add([
-        { xtype: 'introSplash' }
-        ]);
+        var introSplash = Ext.Viewport.add({
+            xtype: 'introSplash'
+        });
 
         var pos = [
         'PoPartnerSucheKriterien'
         ];
 
         Partner.controller.MetadataProvider.load(pos, 'de', function () {
-            console.log("response received");
             // Remove screen
-            Ext.Viewport.setActiveItem([
-                { xtype: 'Master' }
-            ]);
+            console.log("response received");
+
+            Ext.Viewport.remove(introSplash);
+
+
         });
 
         Ext.create('Partner.view.Master', {fullscreen: true});
