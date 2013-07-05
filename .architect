@@ -5,6 +5,14 @@
         "component": true,
         "controller": true,
         "resource": true,
+        "b2f41405-c061-41ac-b729-aee8f934ea27": {
+            "id": "b2f41405-c061-41ac-b729-aee8f934ea27",
+            "cn": [
+                {
+                    "id": "93dd5748-5bfd-4a99-8b88-0f756d5da9f1"
+                }
+            ]
+        },
         "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce": {
             "id": "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
             "cn": [
@@ -318,6 +326,10 @@
                 }
             ]
         },
+        "925168ca-9f8d-4d08-96b5-51e61cc602d5": {
+            "id": "925168ca-9f8d-4d08-96b5-51e61cc602d5",
+            "expanded": false
+        },
         "10632338-afd4-4c3b-be14-03d40c68fee1": {
             "id": "10632338-afd4-4c3b-be14-03d40c68fee1",
             "cn": [
@@ -372,11 +384,11 @@
         "topInstance": null
     },
     "inspectorState": {
-        "topInstance": "82b49327-8792-4091-a9ad-da6b8e0e0e91",
-        "selectedInstance": "82b49327-8792-4091-a9ad-da6b8e0e0e91"
+        "topInstance": "application",
+        "selectedInstance": "2ae7eca4-f003-49fe-ad1e-738d81df74d7"
     },
     "codeState": {
-        "topInstance": "82b49327-8792-4091-a9ad-da6b8e0e0e91"
+        "topInstance": "application"
     },
     "editMode": "code"
 }

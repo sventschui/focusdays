@@ -25,7 +25,8 @@
             "MetadataTextField",
             "MetadataButton",
             "PartnerDetailView",
-            "Master"
+            "Master",
+            "IntroSplash"
         ],
         "requires": [
             "Partner.controller.MetadataProvider",
@@ -50,6 +51,25 @@
                 "implHandler": [
                     "// Settings",
                     "Partner.controller.SettingsProvider.init();",
+                    "",
+                    "// Loading screen",
+                    "Ext.Viewport.add([",
+                    "{ xtype: 'introSplash' }",
+                    "]);",
+                    "",
+                    "var pos = [",
+                    "\t'PoPartnerSucheKriterien'",
+                    "];",
+                    "",
+                    "Partner.controller.MetadataProvider.load(pos, 'de', function () {",
+                    "    // Remove screen",
+                    "    console.log(\"response received\");",
+                    "    Ext.Viewport.setActiveItem([",
+                    "{ xtype: 'Master' }",
+                    "]);",
+                    "",
+                    "",
+                    "});",
                     ""
                 ]
             },
