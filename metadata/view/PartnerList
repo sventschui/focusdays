@@ -49,7 +49,9 @@
                     "var partnerDetail = dataview.up(\"#mainNavigation\").push({",
                     "    xtype: 'partnerDetail',",
                     "    title: 'partnerDetail'",
-                    "});"
+                    "});",
+                    "",
+                    "partnerDetail.setValues(record.raw);"
                 ],
                 "name": "select"
             },

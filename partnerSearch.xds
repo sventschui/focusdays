@@ -3,7 +3,7 @@
     "settings": {
         "urlPrefix": "http://focusdays/",
         "exportPath": "C:/xampp/htdocs/partnerSearchNew/focusdays",
-        "sdkPath": "C:/Program Files (x86)/sencha-touch-2.2.1-commercial (1)/touch-2.2.1",
+        "sdkPath": "/Users/sven/Documents/workspace/sencha/touch/touch-2.2.1",
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,
@@ -77,14 +77,6 @@
                 "app/view/MetadataButton.js"
             ],
             "className": "MetadataButton"
-        },
-        "9aeb6e31-b311-48cb-9308-ad1015db2b74": {
-            "paths": [
-                "metadata/resource/packager",
-                "",
-                "packager.json"
-            ],
-            "className": "packager"
         },
         "82b49327-8792-4091-a9ad-da6b8e0e0e91": {
             "paths": [
@@ -195,6 +187,14 @@
                 "app/controller/IntroViewC.js"
             ],
             "className": "IntroViewC"
+        },
+        "da7630e6-cf3a-43b3-8acf-d3678348e59d": {
+            "paths": [
+                "metadata/resource/packager1",
+                "",
+                "packager1.json"
+            ],
+            "className": "packager1"
         }
     },
     "viewOrderMap": {
@@ -228,8 +228,8 @@
         ],
         "resource": [
             "d9faadd0-22cf-42be-a745-62f587c63a72",
-            "9aeb6e31-b311-48cb-9308-ad1015db2b74",
-            "abb84c57-1e7b-44ba-9987-db378e987fcd"
+            "abb84c57-1e7b-44ba-9987-db378e987fcd",
+            "da7630e6-cf3a-43b3-8acf-d3678348e59d"
         ],
         "app": [
             "application"

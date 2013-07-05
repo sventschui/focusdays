@@ -35,7 +35,8 @@
                         "itemId": null,
                         "labelCls": "PoPartnerSucheKriterien.partnerName",
                         "value": [
-                            "'Muster'"
+                            "Muster",
+                            ""
                         ]
                     },
                     "designerId": "3d8105c9-7447-4c27-8770-b6890fc3c2f8",
