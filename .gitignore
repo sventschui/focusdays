@@ -9,3 +9,5 @@ build
 packages
 touch
 resources/sass/.sass-cache
+app.js
+app.html
