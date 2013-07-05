@@ -40,6 +40,23 @@
                 "name": "metadataLoaded"
             },
             "designerId": "05f89187-6caf-48a5-a880-57b323cee27d"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "this.callParent();",
+                    "",
+                    "this.setLabel('123');"
+                ]
+            },
+            "designerId": "4aaa62b9-5195-4e64-9864-2a203ce66c4d"
         }
     ]
 }

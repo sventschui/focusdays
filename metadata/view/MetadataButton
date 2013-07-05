@@ -22,7 +22,7 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    "component.setText('123');"
+                    "component.setText('Search');"
                 ],
                 "name": "initialize"
             },
