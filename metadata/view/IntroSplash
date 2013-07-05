@@ -6,8 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "cls": [
+            "black-bg"
+        ],
+        "id": null,
+        "itemId": null,
         "designer|userClassName": "IntroSplash",
-        "designer|initialView": true
+        "designer|userAlias": "introSplash"
     },
     "designerId": "b2f41405-c061-41ac-b729-aee8f934ea27",
     "cn": [
