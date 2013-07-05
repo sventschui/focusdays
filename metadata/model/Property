@@ -32,8 +32,10 @@
             "codeClass": null,
             "userConfig": {
                 "associatedName": "propertyTexts",
+                "associationKey": "texts.text",
                 "designer|displayName": "hasManyPropertyText",
-                "model": "PropertyText"
+                "model": "PropertyText",
+                "name": "propertyTexts"
             },
             "designerId": "ee3de9fd-2523-4c38-8c67-952ccb5d0153"
         }

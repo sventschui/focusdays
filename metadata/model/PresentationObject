@@ -34,6 +34,7 @@
             "codeClass": null,
             "userConfig": {
                 "associatedName": "properties",
+                "associationKey": "properties.property",
                 "designer|displayName": "hasManyProperty",
                 "model": "Property"
             },

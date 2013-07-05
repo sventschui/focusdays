@@ -58,18 +58,17 @@
                     "});",
                     "",
                     "var pos = [",
-                    "'PoPartnerSucheKriterien'",
+                    "    'PoPartnerSucheKriterien',",
+                    "    'PoPartnerDetail',",
+                    "    'PoPartnerInfo',",
+                    "    'PartnerDetailView',",
+                    "    'PartnerSucheView'",
                     "];",
                     "",
                     "Partner.controller.MetadataProvider.load(pos, 'de', function () {",
                     "    // Remove screen",
-                    "    console.log(\"response received\");",
-                    "    ",
                     "    Ext.Viewport.remove(introSplash);",
-                    "",
-                    "",
-                    "});",
-                    ""
+                    "});"
                 ]
             },
             "designerId": "2ae7eca4-f003-49fe-ad1e-738d81df74d7"

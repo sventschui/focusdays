@@ -33,7 +33,7 @@
                     "userConfig": {
                         "id": "search_name",
                         "itemId": null,
-                        "label": "PoPartnerSucheKriterien.partnerName",
+                        "labelCls": "PoPartnerSucheKriterien.partnerName",
                         "value": [
                             "'Muster'"
                         ]
@@ -50,7 +50,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_prename",
-                        "label": "PoPartnerSucheKriterien.partnerVorname",
+                        "labelCls": "PoPartnerSucheKriterien.partnerVorname",
                         "value": [
                             "'Hans'"
                         ]
@@ -67,7 +67,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_zip",
-                        "label": "PoPartnerSucheKriterien.plz"
+                        "labelCls": "PoPartnerSucheKriterien.plz"
                     },
                     "designerId": "5e9aec92-dc6b-4766-b826-2e23409a4137",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -81,7 +81,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_city",
-                        "label": "PoPartnerSucheKriterien.ort"
+                        "labelCls": "PoPartnerSucheKriterien.ort"
                     },
                     "designerId": "0866edf2-2517-44f4-a19b-23e019eeea2d",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -95,7 +95,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_dob",
-                        "label": "PoPartnerSucheKriterien.geburtsdatum"
+                        "labelCls": "PoPartnerSucheKriterien.geburtsdatum"
                     },
                     "designerId": "bc378836-60ce-4b20-b65c-406c41c30b6f",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -109,7 +109,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_numberPlate",
-                        "label": "PoPartnerSucheKriterien.kontrollschild"
+                        "labelCls": "PoPartnerSucheKriterien.kontrollschild"
                     },
                     "designerId": "22f0c000-4f58-4328-9b8f-4c6869995ecd",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -123,7 +123,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_polNr",
-                        "label": "PoPartnerSucheKriterien.policeNummer"
+                        "labelCls": "PoPartnerSucheKriterien.policeNummer"
                     },
                     "designerId": "d13d57c1-b445-4a29-b093-7eecf0ee2c5d",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -137,7 +137,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_claimNr",
-                        "label": "PoPartnerSucheKriterien.schadenNumme"
+                        "labelCls": "PoPartnerSucheKriterien.schadenNumme"
                     },
                     "designerId": "2ed236cf-7b58-493e-8b04-16f0125d3245",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"

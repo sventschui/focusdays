@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "MetadataProvider",
-        "singleton": true
+        "singleton": true,
+        "extend": "Ext.util.Observable"
     },
     "designerId": "b3becc8c-fe30-482c-a7a6-6ecd8b708311",
     "cn": [
@@ -23,7 +24,7 @@
                 "designer|params": [
                     "pos",
                     "locale",
-                    "callback"
+                    "cb"
                 ],
                 "implHandler": [
                     "var mdStore = Ext.getStore(\"metadataStore\");",
@@ -34,10 +35,11 @@
                     "        locale: locale",
                     "    },",
                     "    callback: function (records, operation, success) {",
-                    "        callback();",
+                    "        Partner.controller.MetadataProvider.fireEvent('change');",
+                    "        ",
+                    "        cb();",
                     "    }",
-                    "});",
-                    ""
+                    "});"
                 ]
             },
             "designerId": "94163354-61c5-44f0-99fe-b548979bda2f"
@@ -57,12 +59,11 @@
                     "locale"
                 ],
                 "implHandler": [
-                    "",
                     "var mdStore = Ext.getStore(\"metadataStore\");",
                     "",
                     "// PO nachladen falls nicht vorhanden",
                     "if (mdStore.find('name', poName) !== 1) {",
-                    "    Partner.controller.MetadataProvider.load([poName], locale);",
+                    "    //Partner.controller.MetadataProvider.load([poName], locale);",
                     "}",
                     "",
                     "// PO finden",
@@ -88,11 +89,32 @@
                     "",
                     "var text = texts.findRecord('tag', 'label');",
                     "",
-                    "return text.get('text');",
-                    ""
+                    "return text.get('text');"
                 ]
             },
             "designerId": "6c24621a-828e-41d8-8346-37aff70693c4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "constructor",
+                "designer|params": [
+                    "params"
+                ],
+                "implHandler": [
+                    "this.addEvents({",
+                    "    \"change\" : true",
+                    "});",
+                    "",
+                    "this.callParent(arguments);"
+                ]
+            },
+            "designerId": "df32f116-b57d-4166-b290-bd15c2f76856"
         }
     ]
 }
