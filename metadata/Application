@@ -1,3 +1,4 @@
+
 {
     "type": "Ext.app.Application",
     "reference": {
@@ -73,11 +74,7 @@
                     "'PartnerDetailView',",
                     "'PartnerSucheView'",
                     "];",
-<<<<<<< HEAD
                     "",
-=======
-                    "debugger;",
->>>>>>> FETCH_HEAD
                     "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
                     "    // Remove screen",
                     "    Ext.Viewport.remove(introSplash);",
@@ -117,3 +114,4 @@
         }
     ]
 }
+

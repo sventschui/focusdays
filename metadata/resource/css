@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "resources/css/menu.css"
+    },
+    "designerId": "d5f35853-d344-493e-a70e-64fc4e96161a"
+}
