@@ -21,7 +21,6 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "PartnerSearchProxy",
-                "url": "http://raspi-lolo.dyndns.org:8888/json-restlet-example-web/json-random/search",
                 "recordParam": null
             },
             "designerId": "9edc71df-1243-4084-a6a7-1c45a9528737",
