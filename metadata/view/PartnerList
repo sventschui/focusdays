@@ -58,6 +58,32 @@
                 "name": "select"
             },
             "designerId": "36c18465-9506-43d9-ba79-c6e2d840f612"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "this.callParent();",
+                    "/*",
+                    "var self = this;",
+                    "var updateLabel = function () {",
+                    "debugger;",
+                    "var label = Partner.controller.MetadataProvider.getLabelFromElement(",
+                    "self.getItems().items[0]);",
+                    "self.getItems().items[0].setTitle(label);",
+                    "};",
+                    "updateLabel();",
+                    "Partner.controller.MetadataProvider.addListener('change', updateLabel);",
+                    "*/"
+                ]
+            },
+            "designerId": "32ffe9b6-6d63-4ea3-98d9-ac767a680a9f"
         }
     ]
 }

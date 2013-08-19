@@ -68,7 +68,7 @@
                     "'PartnerDetailView',",
                     "'PartnerSucheView'",
                     "];",
-                    "debugger;",
+                    "",
                     "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
                     "    // Remove screen",
                     "    Ext.Viewport.remove(introSplash);",
@@ -88,19 +88,6 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    "// Settings",
-                    "Partner.controller.SettingsProvider.init();",
-                    "",
-                    "var pos = [",
-                    "'PoPartnerSucheKriterien',",
-                    "'PoPartnerDetail',",
-                    "'PoPartnerInfo',",
-                    "'PartnerDetailView',",
-                    "'PartnerSucheView'",
-                    "];",
-                    "",
-                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
-                    "});",
                     ""
                 ]
             },

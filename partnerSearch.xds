@@ -1,8 +1,8 @@
 {
     "name": "partnerSearch",
     "settings": {
-        "urlPrefix": "http://localhost:8080/focusdays2013-senchatouch",
-        "exportPath": "C:/developer/workspaces/focusdays/focusdays2013-senchatouch/WebContent",
+        "urlPrefix": "http://localhost:8080/focusdays2013-senchatouch2",
+        "exportPath": "C:/developer/workspaces/focusdays/focusdays2013-senchatouch2/WebContent",
         "sdkPath": "/Users/sven/Documents/workspace/sencha/touch/touch-2.2.1",
         "spacesToIndent": 4,
         "lineEnding": "LF",

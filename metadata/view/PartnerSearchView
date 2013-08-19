@@ -174,27 +174,13 @@
                 "fn": "initialize",
                 "implHandler": [
                     "this.callParent();",
-                    "",
-                    "var MetadataProvider = Partner.controller.MetadataProvider;",
-                    "var SettingsProvider = Partner.controller.SettingsProvider;",
-                    "",
                     "var self = this;",
-                    "",
                     "var updateLabel = function () {",
-                    "    /*",
-                    "    var propName = self.getItems().items[0].getCls()[0];",
-                    "    console.log(propName);",
-                    "    var parts = propName.split(\".\");",
-                    "    var locale = SettingsProvider.getSetting('locale');",
-                    "    var label = MetadataProvider.getLabel(parts[0], parts[1], locale);",
-                    "    */    ",
-                    "    var label = MetadataProvider.getLabelFromElement(self.getItems().items[0]);",
+                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(self.getItems().items[0]);",
                     "    self.getItems().items[0].setTitle(label);",
                     "};",
-                    "",
                     "//updateLabel();",
-                    "",
-                    "MetadataProvider.addListener('change', updateLabel);"
+                    "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
             "designerId": "46f408e1-2a14-4779-86fd-200545e5731b"

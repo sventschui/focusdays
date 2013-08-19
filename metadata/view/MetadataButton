@@ -25,7 +25,7 @@
                     "var self = component;",
                     "var updateLabel = function () {",
                     "    debugger;",
-                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(component);",
+                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(self);",
                     "    self.setText(label);",
                     "};",
                     "Partner.controller.MetadataProvider.addListener('change', updateLabel);"

@@ -28,10 +28,10 @@
                 "implHandler": [
                     "var self = this;",
                     "var updateLabel = function () {    ",
-                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(component);",
+                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(self);",
                     "    self.setLabel(label);",
                     "};",
-                    "",
+                    "updateLabel();",
                     "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
