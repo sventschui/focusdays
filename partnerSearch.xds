@@ -1,13 +1,13 @@
 {
     "name": "partnerSearch",
     "settings": {
-        "urlPrefix": "http://focusdays/",
-        "exportPath": "C:/xampp/htdocs/partnerSearchNew/focusdays",
+        "urlPrefix": "http://localhost:8080/focusdays2013-senchatouch",
+        "exportPath": "C:/developer/workspaces/focusdays/focusdays2013-senchatouch/WebContent",
         "sdkPath": "/Users/sven/Documents/workspace/sencha/touch/touch-2.2.1",
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,
-        "cacheBust": false,
+        "cacheBust": true,
         "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.2.2",
@@ -211,24 +211,41 @@
                 "packager.json"
             ],
             "className": "packager"
+        },
+        "e9c7b156-9bd0-4775-8981-044d92008f9b": {
+            "paths": [
+                "metadata/store/PartnerDetailStore",
+                "app/store/override/PartnerDetailStore.js",
+                "app/store/PartnerDetailStore.js"
+            ],
+            "className": "PartnerDetailStore"
+        },
+        "cb83f49b-613c-487a-a363-192604d781d8": {
+            "paths": [
+                "metadata/model/PartnerDetailModel",
+                "app/model/override/PartnerDetailModel.js",
+                "app/model/PartnerDetailModel.js"
+            ],
+            "className": "PartnerDetailModel"
         }
     },
     "viewOrderMap": {
         "view": [
             "b2f41405-c061-41ac-b729-aee8f934ea27",
+            "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b",
             "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
             "6610b108-799f-4ec9-812d-8b0105b57741",
             "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
-            "a91ee4c1-41e4-4338-a5b5-c425010453ac",
-            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
             "82b49327-8792-4091-a9ad-da6b8e0e0e91",
-            "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b"
+            "a91ee4c1-41e4-4338-a5b5-c425010453ac",
+            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e"
         ],
         "store": [
             "f961c98b-1a2d-403b-b88b-8cb501caa75a",
             "1d019931-5adf-4dd7-bd21-496744b84d68",
             "82eaec2e-658e-4849-b89d-4a87aaa29b22",
-            "4b5df94d-b108-4b77-9719-4771a31e4ea4"
+            "4b5df94d-b108-4b77-9719-4771a31e4ea4",
+            "e9c7b156-9bd0-4775-8981-044d92008f9b"
         ],
         "controller": [
             "925168ca-9f8d-4d08-96b5-51e61cc602d5",
@@ -241,7 +258,8 @@
             "a5f7ccfe-e8d3-4caa-9ab9-d8ebd7fd65b5",
             "1f93c6f4-ff85-4369-954c-ea3ff6f25d09",
             "d7ec15a2-74d3-4685-9d3d-b31d6974dd55",
-            "72bba0be-d3ef-462a-ba90-37e88fdca97c"
+            "72bba0be-d3ef-462a-ba90-37e88fdca97c",
+            "cb83f49b-613c-487a-a363-192604d781d8"
         ],
         "resource": [
             "9aeb6e31-b311-48cb-9308-ad1015db2b74",

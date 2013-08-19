@@ -19,7 +19,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "MyFieldSet1"
+                "cls": [
+                    "$M.PartnerSucheView.title"
+                ],
+                "itemId": "search-form",
+                "title": "***Suche***"
             },
             "designerId": "148aaf80-1bb1-442d-84bb-d4d53f5c391e",
             "cn": [
@@ -33,7 +37,10 @@
                     "userConfig": {
                         "id": "search_lastName",
                         "itemId": null,
-                        "labelCls": "PoPartnerSucheKriterien.partnerName"
+                        "labelCls": "$M.PoPartnerSucheKriterien.partnerName",
+                        "value": [
+                            "\"bre\""
+                        ]
                     },
                     "designerId": "3d8105c9-7447-4c27-8770-b6890fc3c2f8",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -47,7 +54,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_firstName",
-                        "labelCls": "PoPartnerSucheKriterien.partnerVorname"
+                        "labelCls": "$M.PoPartnerSucheKriterien.partnerVorname"
                     },
                     "designerId": "f587383d-8bf4-47db-b57a-94bd5f304693",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -61,7 +68,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_zip",
-                        "labelCls": "PoPartnerSucheKriterien.plz"
+                        "labelCls": "$M.PoPartnerSucheKriterien.plz"
                     },
                     "designerId": "5e9aec92-dc6b-4766-b826-2e23409a4137",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -75,7 +82,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_city",
-                        "labelCls": "PoPartnerSucheKriterien.ort"
+                        "labelCls": "$M.PoPartnerSucheKriterien.ort"
                     },
                     "designerId": "0866edf2-2517-44f4-a19b-23e019eeea2d",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -89,7 +96,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_dob",
-                        "labelCls": "PoPartnerSucheKriterien.geburtsdatum"
+                        "labelCls": "$M.PoPartnerSucheKriterien.geburtsdatum"
                     },
                     "designerId": "bc378836-60ce-4b20-b65c-406c41c30b6f",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -103,7 +110,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_numberPlate",
-                        "labelCls": "PoPartnerSucheKriterien.kontrollschild"
+                        "labelCls": "$M.PoPartnerSucheKriterien.kontrollschild"
                     },
                     "designerId": "22f0c000-4f58-4328-9b8f-4c6869995ecd",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -117,7 +124,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_polNr",
-                        "labelCls": "PoPartnerSucheKriterien.policeNummer"
+                        "labelCls": "$M.PoPartnerSucheKriterien.policeNummer"
                     },
                     "designerId": "d13d57c1-b445-4a29-b093-7eecf0ee2c5d",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -131,7 +138,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "search_claimNr",
-                        "labelCls": "PoPartnerSucheKriterien.schadenNumme"
+                        "labelCls": "$M.PoPartnerSucheKriterien.schadenNummer"
                     },
                     "designerId": "2ed236cf-7b58-493e-8b04-16f0125d3245",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
@@ -144,14 +151,53 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "cls": [
+                            "$M.PartnerSucheView.sucheButton"
+                        ],
                         "id": "searchButton",
                         "itemId": "metadataButton",
-                        "text": "PartnerSucheView.sucheButton"
+                        "text": "***Search***"
                     },
                     "designerId": "61226a8e-aefc-46e9-a355-69ebb5dc13b3",
                     "masterInstanceId": "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e"
                 }
             ]
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "this.callParent();",
+                    "",
+                    "var MetadataProvider = Partner.controller.MetadataProvider;",
+                    "var SettingsProvider = Partner.controller.SettingsProvider;",
+                    "",
+                    "var self = this;",
+                    "",
+                    "var updateLabel = function () {",
+                    "    /*",
+                    "    var propName = self.getItems().items[0].getCls()[0];",
+                    "    console.log(propName);",
+                    "    var parts = propName.split(\".\");",
+                    "    var locale = SettingsProvider.getSetting('locale');",
+                    "    var label = MetadataProvider.getLabel(parts[0], parts[1], locale);",
+                    "    */    ",
+                    "    var label = MetadataProvider.getLabelFromElement(self.getItems().items[0]);",
+                    "    self.getItems().items[0].setTitle(label);",
+                    "};",
+                    "",
+                    "//updateLabel();",
+                    "",
+                    "MetadataProvider.addListener('change', updateLabel);"
+                ]
+            },
+            "designerId": "46f408e1-2a14-4779-86fd-200545e5731b"
         }
     ]
 }

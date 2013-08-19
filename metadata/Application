@@ -11,13 +11,15 @@
             "PresentationObject",
             "Property",
             "PropertyText",
-            "Settings"
+            "Settings",
+            "PartnerDetailModel"
         ],
         "stores": [
             "PartnerInfoStore",
             "MetadataStore",
             "SettingsStore",
-            "RecentPartnerStore"
+            "RecentPartnerStore",
+            "PartnerDetailStore"
         ],
         "views": [
             "PartnerSearchView",
@@ -50,6 +52,7 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
+                    "",
                     "// Settings",
                     "Partner.controller.SettingsProvider.init();",
                     "",
@@ -59,20 +62,49 @@
                     "});",
                     "",
                     "var pos = [",
-                    "    'PoPartnerSucheKriterien',",
-                    "    'PoPartnerDetail',",
-                    "    'PoPartnerInfo',",
-                    "    'PartnerDetailView',",
-                    "    'PartnerSucheView'",
+                    "'PoPartnerSucheKriterien',",
+                    "'PoPartnerDetail',",
+                    "'PoPartnerInfo',",
+                    "'PartnerDetailView',",
+                    "'PartnerSucheView'",
                     "];",
-                    "",
-                    "Partner.controller.MetadataProvider.load(pos, 'de', function () {",
+                    "debugger;",
+                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
                     "    // Remove screen",
                     "    Ext.Viewport.remove(introSplash);",
-                    "});"
+                    "});",
+                    ""
                 ]
             },
             "designerId": "2ae7eca4-f003-49fe-ad1e-738d81df74d7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "// Settings",
+                    "Partner.controller.SettingsProvider.init();",
+                    "",
+                    "var pos = [",
+                    "'PoPartnerSucheKriterien',",
+                    "'PoPartnerDetail',",
+                    "'PoPartnerInfo',",
+                    "'PartnerDetailView',",
+                    "'PartnerSucheView'",
+                    "];",
+                    "",
+                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
+                    "});",
+                    ""
+                ]
+            },
+            "designerId": "c2fdc1b5-056e-44d7-ab17-9769b575b429"
         }
     ]
 }

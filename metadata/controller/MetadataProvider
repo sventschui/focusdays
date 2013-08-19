@@ -36,7 +36,7 @@
                     "    },",
                     "    callback: function (records, operation, success) {",
                     "        Partner.controller.MetadataProvider.fireEvent('change');",
-                    "        ",
+                    "",
                     "        cb();",
                     "    }",
                     "});"
@@ -95,7 +95,7 @@
             "designerId": "6c24621a-828e-41d8-8346-37aff70693c4"
         },
         {
-            "type": "basicfunction",
+            "type": "staticfunction",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -114,7 +114,68 @@
                     "this.callParent(arguments);"
                 ]
             },
-            "designerId": "df32f116-b57d-4166-b290-bd15c2f76856"
+            "designerId": "29b64bd3-eb97-4d0d-b44d-eaac09836791"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getLabelFromElement",
+                "designer|params": [
+                    "element"
+                ],
+                "implHandler": [
+                    "",
+                    "\tvar propName = this.getClsMetadata(element, element.getCls());",
+                    "    if (propName === null) {",
+                    "        propName = this.getClsMetadata(element, element.getLabelCls());",
+                    "    }",
+                    "    if (propName === null) {",
+                    "        return \"\";",
+                    "    }",
+                    "",
+                    "    console.log(propName);",
+                    "    var parts = propName.split(\".\");",
+                    "    var locale = Partner.controller.SettingsProvider.getSetting('locale');",
+                    "    var label = this.getLabel(parts[0], parts[1], locale);",
+                    "    return label;",
+                    ""
+                ]
+            },
+            "designerId": "1938ea3c-ea5d-4002-8ca0-30c1d6bb6b47"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getClsMetadata",
+                "designer|params": [
+                    "element",
+                    "propName"
+                ],
+                "implHandler": [
+                    "    if (propName !== null) {",
+                    "\t\tif (propName.constructor === Array) {",
+                    "\t\t\tpropName = propName[0];",
+                    "        }",
+                    "        if (propName.length > 3 && propName.substr(0,3) == \"$M.\") {",
+                    "\t\t\treturn propName.substr(3);",
+                    "        }",
+                    "    }",
+                    "    return null;",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "74a16b3d-a72b-457e-9ab0-948a3a5e247e"
         }
     ]
 }

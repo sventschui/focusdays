@@ -21,7 +21,7 @@
             "codeClass": null,
             "userConfig": {
                 "implHandler": [
-                    "<div>{partnerName} {partnerVorname}</div>"
+                    "<div>{partnerName}<tpl if=\"partnerVorname\"> {partnerVorname}</tpl><tpl if=\"geburtsdatum != '' \"> {geburtsdatum}</tpl> {strasse} {strasseNr} {plz} {ort}</div>"
                 ],
                 "designer|displayName": "itemTpl"
             },
@@ -46,7 +46,7 @@
             "userConfig": {
                 "fn": "onListSelect",
                 "implHandler": [
-                    "var partnerDetail = dataview.up(\"#mainNavigation\").push({",
+                    "var partnerDetail = dataview.up(\"#mainNavigation1\").push({",
                     "    xtype: 'partnerDetail',",
                     "    title: 'partnerDetail'",
                     "});",

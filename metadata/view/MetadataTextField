@@ -26,23 +26,13 @@
             "userConfig": {
                 "fn": "initialize",
                 "implHandler": [
-                    "var MetadataProvider = Partner.controller.MetadataProvider;",
-                    "var SettingsProvider = Partner.controller.SettingsProvider;",
-                    "",
                     "var self = this;",
-                    "",
-                    "var updateLabel = function () {",
-                    "    console.log(self.getLabelCls());",
-                    "    var parts = self.getLabelCls().split(\".\");",
-                    "    var locale = SettingsProvider.getSetting('locale');",
-                    "    var label = MetadataProvider.getLabel(parts[0], parts[1], locale);",
-                    "",
+                    "var updateLabel = function () {    ",
+                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(component);",
                     "    self.setLabel(label);",
                     "};",
                     "",
-                    "updateLabel();",
-                    "",
-                    "MetadataProvider.addListener('change', updateLabel);"
+                    "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
             "designerId": "f34ff76e-26c3-4fb7-b468-0550f2d5adab"

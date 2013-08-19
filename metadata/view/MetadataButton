@@ -22,7 +22,13 @@
             "userConfig": {
                 "fn": "init",
                 "implHandler": [
-                    "component.setText('Search');"
+                    "var self = component;",
+                    "var updateLabel = function () {",
+                    "    debugger;",
+                    "    var label = Partner.controller.MetadataProvider.getLabelFromElement(component);",
+                    "    self.setText(label);",
+                    "};",
+                    "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ],
                 "name": "initialize"
             },
