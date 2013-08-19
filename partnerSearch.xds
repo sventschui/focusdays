@@ -150,12 +150,6 @@
             ],
             "className": "Settings"
         },
-        "abb84c57-1e7b-44ba-9987-db378e987fcd": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
-        },
         "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b": {
             "paths": [
                 "metadata/view/Master",
@@ -309,7 +303,6 @@
         "resource": [
             "9aeb6e31-b311-48cb-9308-ad1015db2b74",
             "d9faadd0-22cf-42be-a745-62f587c63a72",
-            "abb84c57-1e7b-44ba-9987-db378e987fcd",
             "da7630e6-cf3a-43b3-8acf-d3678348e59d"
         ],
         "app": [

@@ -77,7 +77,7 @@
      *  - Android
      *  - AndroidEmulator
      */
-    "platform": "Android",
+    "platform": "AndroidEmulator",
 
     /**
      * @cfg {String} deviceType
@@ -92,11 +92,36 @@
     "deviceType": "Universal",
 
     /**
+     * @cfg {String} certificatePath
+     * 
+     * This is the location of your certificate.
+     * This is required when you are developing for Android or you are developing on Windows.
+     */
+    "certificatePath": "focusdays.keystore",
+
+    /**
+     * @cfg {String} certificateAlias
+     * 
+     * This is the name of your certificate.
+     * IF you do not specify this on OSX, we will try and automatically find the certificate for you using the applicationId.
+     * This can be just a simple matcher. For example, if your certificate name is "iPhone Developer: Robert Dougan (ABCDEFGHIJ)", you can just put "iPhone Developer".
+     * When using a certificatePath on Windows, you do not need to specify this.
+     */
+    "certificateAlias": "focusdays",
+
+    /**
+     * @cfg {String} certificatePassword
+     * 
+     * The password which was specified during certificate export.
+     */
+    "certificatePassword": "changeit",
+
+    /**
      * @cfg {String} sdkPath
      * 
      * This is the path to the Android SDK, if you are developing an Android application.
      */
-    "sdkPath": "C:/Users/Mark/Dropbox/Uni/4sem/SoPra/ProjectEnvironment/android-sdk-windows",
+    "sdkPath": "/Users/sven/Documents/workspace/android-sdk-macosx",
 
     /**
      * @cfg {String} androidAPILevel
@@ -104,7 +129,7 @@
      * This is android API level, the version of Android SDK to use, you can read more about it here: http://developer.android.com/guide/appendix/api-levels.html.
      * Be sure to install corresponding platform API in android SDK manager (android_sdk/tools/android)
      */
-    "androidAPILevel": "8",
+    "androidAPILevel": "11",
 
     /**
      * @cfg {Array[String]} permissions

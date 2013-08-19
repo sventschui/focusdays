@@ -34,7 +34,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "search_name",
+                        "id": "search_lastName",
                         "itemId": null,
                         "labelCls": "$M.PoPartnerSucheKriterien.partnerName"
                     },
@@ -49,7 +49,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "search_prename",
+                        "id": "search_firstName",
                         "labelCls": "$M.PoPartnerSucheKriterien.partnerVorname"
                     },
                     "designerId": "f587383d-8bf4-47db-b57a-94bd5f304693",
