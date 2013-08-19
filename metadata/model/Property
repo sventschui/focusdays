@@ -33,11 +33,27 @@
             "userConfig": {
                 "associatedName": "propertyTexts",
                 "associationKey": "texts.text",
-                "designer|displayName": "hasManyPropertyText",
-                "model": "PropertyText",
+                "designer|displayName": "hasManyText",
+                "model": "Text",
                 "name": "propertyTexts"
             },
             "designerId": "ee3de9fd-2523-4c38-8c67-952ccb5d0153"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": "valueRanges",
+                "associationKey": "valueRanges.valueRange",
+                "designer|displayName": "hasManyValueRanges",
+                "model": "ValueRange",
+                "name": "valueRanges"
+            },
+            "designerId": "e330af67-3f69-448c-a8c0-5f82133ceb6b"
         }
     ]
 }

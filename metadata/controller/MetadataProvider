@@ -36,63 +36,13 @@
                     "    },",
                     "    callback: function (records, operation, success) {",
                     "        Partner.controller.MetadataProvider.fireEvent('change');",
-                    "        ",
+                    "",
                     "        cb();",
                     "    }",
                     "});"
                 ]
             },
             "designerId": "94163354-61c5-44f0-99fe-b548979bda2f"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "getLabel",
-                "designer|params": [
-                    "poName",
-                    "propertyName",
-                    "locale"
-                ],
-                "implHandler": [
-                    "var mdStore = Ext.getStore(\"metadataStore\");",
-                    "",
-                    "// PO nachladen falls nicht vorhanden",
-                    "if (mdStore.find('name', poName) !== 1) {",
-                    "    //Partner.controller.MetadataProvider.load([poName], locale);",
-                    "}",
-                    "",
-                    "// PO finden",
-                    "var po = mdStore.findRecord('name', poName);",
-                    "",
-                    "if (!po) {",
-                    "    console.log(poName + ' not found in MetadataProvider');",
-                    "    return \"[PO NOT FOUND]\";",
-                    "}",
-                    "",
-                    "// Property holen",
-                    "var properties = po.properties();",
-                    "",
-                    "var property = properties.findRecord('name', propertyName);",
-                    "",
-                    "if (!property) {",
-                    "    console.log('Property ' + propertyName + ' not found in PO ' + poName + ' MetadataProvider');",
-                    "    return \"[Property not found]\";",
-                    "}",
-                    "",
-                    "// Texte holen",
-                    "var texts = property.propertyTexts();",
-                    "",
-                    "var text = texts.findRecord('tag', 'label');",
-                    "",
-                    "return text.get('text');"
-                ]
-            },
-            "designerId": "6c24621a-828e-41d8-8346-37aff70693c4"
         },
         {
             "type": "basicfunction",
@@ -115,6 +65,183 @@
                 ]
             },
             "designerId": "df32f116-b57d-4166-b290-bd15c2f76856"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getCodeForElement",
+                "designer|params": [
+                    "element, key"
+                ],
+                "implHandler": [
+                    "var property = this.getPropertyForElement(element);",
+                    "",
+                    "if(!property) {",
+                    "    return null;",
+                    "}",
+                    "",
+                    "var valueRanges = property.valueRanges();",
+                    "",
+                    "for(var i = 0; i < valueRanges.data.all.length; i++) {",
+                    "    var code = valueRanges.data.all[i].getCodeTable().codes().findRecord('key', codeValue);",
+                    "",
+                    "    if(code !== null) {",
+                    "        var text = code.texts().findRecord('tag', 'long');",
+                    "",
+                    "        if(text === null) {",
+                    "            text = code.texts().findRecord('tag', 'short');",
+                    "        }",
+                    "",
+                    "        if(text === null) {",
+                    "            return null;",
+                    "        }",
+                    "",
+                    "        return text.get('text');",
+                    "    }",
+                    "}",
+                    "",
+                    "return null;"
+                ]
+            },
+            "designerId": "9ba3a04a-4c32-45c6-8501-23aef6fad231"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getLabelForElement",
+                "designer|params": [
+                    "element"
+                ],
+                "implHandler": [
+                    "var property = this.getPropertyForElement(element);",
+                    "",
+                    "if(!property) {",
+                    "    return null;",
+                    "}",
+                    "",
+                    "// Texte holen",
+                    "var texts = property.propertyTexts();",
+                    "",
+                    "var text = texts.findRecord('tag', 'label');",
+                    "",
+                    "if(text === null) {",
+                    "\treturn '[Fehlender Text in den Metadaten]';",
+                    "}",
+                    "    ",
+                    "console.log(\"found label\", text.get('text'));",
+                    "",
+                    "return text.get('text');"
+                ]
+            },
+            "designerId": "7db6b84d-8724-44f3-add1-40b8558db673"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getPropertyForElement",
+                "designer|params": [
+                    "element"
+                ],
+                "implHandler": [
+                    "var mapping = this.parseMetadataMapping(element.getCls());",
+                    "",
+                    "if(mapping === null && element.getLabelCls) {",
+                    "    console.log(\"no mapping found\");",
+                    "    mapping = this.parseMetadataMapping(element.getLabelCls());",
+                    "}",
+                    "",
+                    "if(mapping === null) {",
+                    "    return null;",
+                    "}",
+                    "",
+                    "var poName = mapping[0];",
+                    "var propertyName = mapping[1];",
+                    "",
+                    "var mdStore = Ext.getStore(\"metadataStore\");",
+                    "",
+                    "// PO nachladen falls nicht vorhanden",
+                    "if (mdStore.find('name', poName) !== 1) {",
+                    "    //Partner.controller.MetadataProvider.load([poName], locale);",
+                    "}",
+                    "",
+                    "// PO finden",
+                    "var po = mdStore.findRecord('name', poName);",
+                    "",
+                    "if (!po) {",
+                    "    console.log(poName + ' not found in MetadataProvider');",
+                    "    return null;",
+                    "}",
+                    "",
+                    "// Property holen",
+                    "var properties = po.properties();",
+                    "",
+                    "var property = properties.findRecord('name', propertyName);",
+                    "",
+                    "if (!property) {",
+                    "    console.log('Property ' + propertyName + ' not found in PO ' + poName + ' MetadataProvider');",
+                    "    return null;",
+                    "}",
+                    "",
+                    "return property;"
+                ]
+            },
+            "designerId": "9f7198de-e735-48d2-bb63-15190abe4748"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "parseMetadataMapping",
+                "designer|params": [
+                    "mapping"
+                ],
+                "implHandler": [
+                    "console.log(\"mapping\", mapping);",
+                    "",
+                    "if(mapping === null) {",
+                    "    return mapping;",
+                    "}",
+                    "",
+                    "if(mapping.constructor === Array) {",
+                    "    for(var i = 0; i < mapping.length; i++) {",
+                    "        ",
+                    "        var tmp = this.parseMetadataMapping(mapping[i]);",
+                    "        ",
+                    "        if(tmp !== null) {",
+                    "        ",
+                    "            mapping = tmp; ",
+                    "        ",
+                    "        }",
+                    "    }",
+                    "}",
+                    "",
+                    "if(mapping.length > 3 && mapping.substr(0,3) == \"$M.\") {",
+                    "    return mapping.substr(3).split('.');",
+                    "}",
+                    "",
+                    "return null;"
+                ]
+            },
+            "designerId": "2e331fa7-ce87-44dc-afb5-ec74a14267a4"
         }
     ]
 }

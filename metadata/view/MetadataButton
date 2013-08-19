@@ -13,20 +13,33 @@
     "designerId": "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
     "cn": [
         {
-            "type": "basiceventbinding",
+            "type": "fixedfunction",
             "reference": {
-                "name": "listeners",
+                "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "init",
+                "fn": "initialize",
                 "implHandler": [
-                    "component.setText('Search');"
-                ],
-                "name": "initialize"
+                    "console.log('123');",
+                    "",
+                    "this.callParent();",
+                    "",
+                    "var MetadataProvider = Partner.controller.MetadataProvider;",
+                    "",
+                    "var self = this;",
+                    "",
+                    "var updateButton = function () {",
+                    "    self.setText(MetadataProvider.getLabelForElement(self));",
+                    "};",
+                    "",
+                    "updateButton();",
+                    "",
+                    "MetadataProvider.addListener('change', updateButton);"
+                ]
             },
-            "designerId": "eea8c1b7-ff69-4599-b946-14f735912a87"
+            "designerId": "32765234-bb96-4729-bd03-5416dfb6b029"
         }
     ]
 }

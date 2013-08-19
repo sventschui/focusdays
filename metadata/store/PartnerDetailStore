@@ -1,0 +1,44 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "PartnerDetailModel",
+        "storeId": "partnerDetailStore",
+        "designer|userClassName": "PartnerDetailStore"
+    },
+    "designerId": "2b143ba4-e0b1-4cee-badd-59fc8f2edebf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PartnerDetailProxy",
+                "url": "http://raspi-lolo.dyndns.org:8888/json-restlet-example-web/json-random/get2"
+            },
+            "designerId": "c0971032-b18d-465a-adf9-e225d62721da",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "response.partnerDetail",
+                        "designer|displayName": "PartnerDetailReader"
+                    },
+                    "designerId": "6d88428b-7654-4b4b-8015-79157f56e972"
+                }
+            ]
+        }
+    ]
+}

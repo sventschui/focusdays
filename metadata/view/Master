@@ -29,33 +29,14 @@
             "designerId": "249379a7-96e9-4bfe-8a99-9cc013820bcc",
             "cn": [
                 {
-                    "type": "Ext.dataview.List",
+                    "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "store": "recentPartnerStore"
-                    },
-                    "designerId": "66024c1d-850a-496b-ba02-d3c3ece01024",
-                    "cn": [
-                        {
-                            "type": "Ext.XTemplate",
-                            "reference": {
-                                "name": "itemTpl",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "implHandler": [
-                                    "{partnerNr} - {partnerName} {partnerVorname}"
-                                ],
-                                "designer|displayName": "itemTpl"
-                            },
-                            "designerId": "2f730d35-a422-48f4-9d2b-47ecb6f0effb"
-                        }
-                    ]
+                    "designerId": "9d943b03-48b0-4944-85c7-8ecde40311ec",
+                    "masterInstanceId": "0bebeae3-2c43-4c18-9728-0b788e96da1b"
                 },
                 {
                     "type": "Ext.Toolbar",

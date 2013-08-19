@@ -48,8 +48,10 @@
                     "if(polNr) searchParams.polNr = polNr;",
                     "if(claimNr) searchParams.claimNr = claimNr;",
                     "",
+                    "if(searchParams == {}) {",
+                    "    Ext.Msg.alert('Whoops!', 'Bitte suchkriterien mitgeben!', Ext.emptyFn);",
+                    "}",
                     "",
-                    "console.log(searchParams);",
                     "store.load({params: searchParams});"
                 ],
                 "name": "tap",

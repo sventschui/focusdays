@@ -7,7 +7,7 @@
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,
-        "cacheBust": false,
+        "cacheBust": true,
         "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.2.2",
@@ -136,11 +136,11 @@
         },
         "d7ec15a2-74d3-4685-9d3d-b31d6974dd55": {
             "paths": [
-                "metadata/model/PropertyText",
-                "app/model/override/PropertyText.js",
-                "app/model/PropertyText.js"
+                "metadata/model/Text",
+                "app/model/override/Text.js",
+                "app/model/Text.js"
             ],
-            "className": "PropertyText"
+            "className": "Text"
         },
         "72bba0be-d3ef-462a-ba90-37e88fdca97c": {
             "paths": [
@@ -211,6 +211,62 @@
                 "packager.json"
             ],
             "className": "packager"
+        },
+        "7071e881-26b9-4079-b573-bf69451ef3f1": {
+            "paths": [
+                "metadata/controller/PartnerDetailController",
+                "app/controller/override/PartnerDetailController.js",
+                "app/controller/PartnerDetailController.js"
+            ],
+            "className": "PartnerDetailController"
+        },
+        "864e91a2-d25b-4795-8d7e-fd14ab2f91e7": {
+            "paths": [
+                "metadata/model/PartnerDetailModel",
+                "app/model/override/PartnerDetailModel.js",
+                "app/model/PartnerDetailModel.js"
+            ],
+            "className": "PartnerDetailModel"
+        },
+        "2b143ba4-e0b1-4cee-badd-59fc8f2edebf": {
+            "paths": [
+                "metadata/store/PartnerDetailStore",
+                "app/store/override/PartnerDetailStore.js",
+                "app/store/PartnerDetailStore.js"
+            ],
+            "className": "PartnerDetailStore"
+        },
+        "0bebeae3-2c43-4c18-9728-0b788e96da1b": {
+            "paths": [
+                "metadata/view/RecentPartnerList",
+                "app/view/override/RecentPartnerList.js",
+                "app/view/RecentPartnerList.js"
+            ],
+            "className": "RecentPartnerList"
+        },
+        "6ec92618-94e0-41c4-b7ac-8905e2cd97f7": {
+            "paths": [
+                "metadata/model/ValueRange",
+                "app/model/override/ValueRange.js",
+                "app/model/ValueRange.js"
+            ],
+            "className": "ValueRange"
+        },
+        "a0865f85-1a55-495a-b5b9-d46030e040bd": {
+            "paths": [
+                "metadata/model/CodeTable",
+                "app/model/override/CodeTable.js",
+                "app/model/CodeTable.js"
+            ],
+            "className": "CodeTable"
+        },
+        "27e5a39a-41aa-4297-9fdf-e9cbfd2f70ff": {
+            "paths": [
+                "metadata/model/Code",
+                "app/model/override/Code.js",
+                "app/model/Code.js"
+            ],
+            "className": "Code"
         }
     },
     "viewOrderMap": {
@@ -222,26 +278,33 @@
             "a91ee4c1-41e4-4338-a5b5-c425010453ac",
             "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
             "82b49327-8792-4091-a9ad-da6b8e0e0e91",
+            "0bebeae3-2c43-4c18-9728-0b788e96da1b",
             "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b"
         ],
         "store": [
             "f961c98b-1a2d-403b-b88b-8cb501caa75a",
             "1d019931-5adf-4dd7-bd21-496744b84d68",
             "82eaec2e-658e-4849-b89d-4a87aaa29b22",
-            "4b5df94d-b108-4b77-9719-4771a31e4ea4"
+            "4b5df94d-b108-4b77-9719-4771a31e4ea4",
+            "2b143ba4-e0b1-4cee-badd-59fc8f2edebf"
         ],
         "controller": [
             "925168ca-9f8d-4d08-96b5-51e61cc602d5",
             "10632338-afd4-4c3b-be14-03d40c68fee1",
             "b3becc8c-fe30-482c-a7a6-6ecd8b708311",
-            "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd"
+            "79ee2a1f-b5ba-4ad8-acdc-9ea08f9278bd",
+            "7071e881-26b9-4079-b573-bf69451ef3f1"
         ],
         "model": [
             "cb9788eb-532d-4d2c-923f-70eec58b6c31",
             "a5f7ccfe-e8d3-4caa-9ab9-d8ebd7fd65b5",
             "1f93c6f4-ff85-4369-954c-ea3ff6f25d09",
             "d7ec15a2-74d3-4685-9d3d-b31d6974dd55",
-            "72bba0be-d3ef-462a-ba90-37e88fdca97c"
+            "72bba0be-d3ef-462a-ba90-37e88fdca97c",
+            "864e91a2-d25b-4795-8d7e-fd14ab2f91e7",
+            "6ec92618-94e0-41c4-b7ac-8905e2cd97f7",
+            "a0865f85-1a55-495a-b5b9-d46030e040bd",
+            "27e5a39a-41aa-4297-9fdf-e9cbfd2f70ff"
         ],
         "resource": [
             "9aeb6e31-b311-48cb-9308-ad1015db2b74",

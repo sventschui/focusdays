@@ -1,0 +1,32 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "recentPartnerList",
+        "designer|userClassName": "RecentPartnerList",
+        "designer|userAlias": "recentPartnerList",
+        "store": "recentPartnerStore"
+    },
+    "designerId": "0bebeae3-2c43-4c18-9728-0b788e96da1b",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "{partnerNr} - {partnerName} {partnerVorname}"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "2f730d35-a422-48f4-9d2b-47ecb6f0effb"
+        }
+    ]
+}

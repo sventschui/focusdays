@@ -1,0 +1,55 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "idProperty": "techId",
+        "designer|userClassName": "Code"
+    },
+    "designerId": "27e5a39a-41aa-4297-9fdf-e9cbfd2f70ff",
+    "cn": [
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": "texts",
+                "associationKey": "texts.text",
+                "designer|displayName": "hasManyTexts",
+                "model": "Text",
+                "name": "texts"
+            },
+            "designerId": "058598c4-75c4-4671-af00-bf5a926717ac"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "designerId": "8b8b38ff-6b7e-4e4a-9d4e-cf3219650997"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "key"
+            },
+            "designerId": "b7e0a7ad-fb65-41a9-af6c-e033c2e7239b"
+        }
+    ]
+}

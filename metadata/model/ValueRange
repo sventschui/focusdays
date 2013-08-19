@@ -1,0 +1,32 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ValueRange"
+    },
+    "designerId": "6ec92618-94e0-41c4-b7ac-8905e2cd97f7",
+    "cn": [
+        {
+            "type": "Ext.data.association.HasOne",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": "codeTable",
+                "associationKey": "codeTable",
+                "designer|displayName": "hasOneCodeTable",
+                "model": "CodeTable",
+                "foreignKey": null,
+                "getterName": "getCodeTable",
+                "setterName": "setCodeTable"
+            },
+            "designerId": "d776a112-2b7d-4d9e-b2e8-2b283bea28a1"
+        }
+    ]
+}

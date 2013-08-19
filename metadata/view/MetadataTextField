@@ -27,17 +27,11 @@
                 "fn": "initialize",
                 "implHandler": [
                     "var MetadataProvider = Partner.controller.MetadataProvider;",
-                    "var SettingsProvider = Partner.controller.SettingsProvider;",
                     "",
                     "var self = this;",
                     "",
                     "var updateLabel = function () {",
-                    "    console.log(self.getLabelCls());",
-                    "    var parts = self.getLabelCls().split(\".\");",
-                    "    var locale = SettingsProvider.getSetting('locale');",
-                    "    var label = MetadataProvider.getLabel(parts[0], parts[1], locale);",
-                    "",
-                    "    self.setLabel(label);",
+                    "    self.setLabel(MetadataProvider.getLabelForElement(self));",
                     "};",
                     "",
                     "updateLabel();",
@@ -46,6 +40,33 @@
                 ]
             },
             "designerId": "f34ff76e-26c3-4fb7-b468-0550f2d5adab"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setValue",
+                "designer|params": [
+                    "val"
+                ],
+                "implHandler": [
+                    "var self = this;",
+                    "",
+                    "var codeTranslated = MetadataProvider.getCodeForElement(self, val);",
+                    "",
+                    "console.log('setValue', val, codeTranslated, parts[0], parts[1]);",
+                    "if(codeTranslated !== null) {",
+                    "    val = codeTranslated;",
+                    "}",
+                    "",
+                    "this.callParent([val]);"
+                ]
+            },
+            "designerId": "333d8f62-4608-4fbd-8f06-4b9138a7f902"
         }
     ]
 }

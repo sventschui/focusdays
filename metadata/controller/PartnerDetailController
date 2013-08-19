@@ -1,0 +1,101 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PartnerDetailController"
+    },
+    "designerId": "7071e881-26b9-4079-b573-bf69451ef3f1",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showPartner",
+                "implHandler": [
+                    "this.loadPartner(dataview, record, eOpts);"
+                ],
+                "name": "select",
+                "designer|targetType": "PartnerList",
+                "designer|controlQuery": "list#partnerList"
+            },
+            "designerId": "4b1dbf6a-79e2-414d-af42-94732ff54a10"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadPartner",
+                "designer|params": [
+                    "dataview, record, eOpts"
+                ],
+                "implHandler": [
+                    "var detailStore = Ext.getStore('partnerDetailStore');",
+                    "",
+                    "detailStore.removeAll();",
+                    "",
+                    "var navView = Ext.getCmp(\"mainNavigation\");",
+                    "",
+                    "var partnerDetail = navView.push({",
+                    "    xtype: 'partnerDetail',",
+                    "    title: 'partnerDetail'",
+                    "});",
+                    "",
+                    "partnerDetail.mask({",
+                    "    indicator: true",
+                    "});",
+                    "",
+                    "Ext.getStore('recentPartnerStore').add(record);",
+                    "",
+                    "detailStore.load({",
+                    "    params: {",
+                    "        'partnerNr': record.get('partnerNr')",
+                    "    },",
+                    "    callback: function() {",
+                    "",
+                    "        if(detailStore.getAt(0) == undefined) {",
+                    "            navView.pop();",
+                    "            Ext.Msg.alert('Whoops!', 'Error loading Partner.', Ext.emptyFn);",
+                    "        }",
+                    "",
+                    "        partnerDetail.setValues(detailStore.getAt(0).raw);",
+                    "        partnerDetail.unmask();",
+                    "",
+                    "        dataview.deselectAll();",
+                    "    }",
+                    "});"
+                ]
+            },
+            "designerId": "0b9264ba-2645-4b9b-abe9-d4c58d88bf44"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRecentPartnerListSelect",
+                "implHandler": [
+                    "this.loadPartner(dataview, record, eOpts);"
+                ],
+                "name": "select",
+                "designer|targetType": "RecentPartnerList",
+                "designer|controlQuery": "list#recentPartnerList"
+            },
+            "designerId": "7f0a5db3-69ef-446e-8c80-b7ac99e8d7c7"
+        }
+    ]
+}

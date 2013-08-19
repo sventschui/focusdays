@@ -10,14 +10,19 @@
             "PartnerInfoModel",
             "PresentationObject",
             "Property",
-            "PropertyText",
-            "Settings"
+            "Text",
+            "Settings",
+            "PartnerDetailModel",
+            "ValueRange",
+            "CodeTable",
+            "Code"
         ],
         "stores": [
             "PartnerInfoStore",
             "MetadataStore",
             "SettingsStore",
-            "RecentPartnerStore"
+            "RecentPartnerStore",
+            "PartnerDetailStore"
         ],
         "views": [
             "PartnerSearchView",
@@ -27,14 +32,16 @@
             "MetadataButton",
             "PartnerDetailView",
             "Master",
-            "IntroSplash"
+            "IntroSplash",
+            "RecentPartnerList"
         ],
         "requires": [
             "Partner.controller.MetadataProvider",
             "Partner.controller.SettingsProvider"
         ],
         "controllers": [
-            "PartnerSearchController"
+            "PartnerSearchController",
+            "PartnerDetailController"
         ],
         "name": "Partner"
     },
@@ -59,14 +66,14 @@
                     "});",
                     "",
                     "var pos = [",
-                    "    'PoPartnerSucheKriterien',",
-                    "    'PoPartnerDetail',",
-                    "    'PoPartnerInfo',",
-                    "    'PartnerDetailView',",
-                    "    'PartnerSucheView'",
+                    "'PoPartnerSucheKriterien',",
+                    "'PoPartnerDetail',",
+                    "'PoPartnerInfo',",
+                    "'PartnerDetailView',",
+                    "'PartnerSucheView'",
                     "];",
                     "",
-                    "Partner.controller.MetadataProvider.load(pos, 'de', function () {",
+                    "Partner.controller.MetadataProvider.load(pos, Partner.controller.SettingsProvider.getSetting('locale'), function () {",
                     "    // Remove screen",
                     "    Ext.Viewport.remove(introSplash);",
                     "});"

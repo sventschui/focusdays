@@ -1,0 +1,278 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PartnerDetailModel"
+    },
+    "designerId": "864e91a2-d25b-4795-8d7e-fd14ab2f91e7",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "partnerNr"
+            },
+            "designerId": "6b895375-f2c9-4b00-a60c-900e0c820051"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "anredeCd"
+            },
+            "designerId": "ad5ac2fd-d7e0-45f7-b3e4-f254a69a3345"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "beruf"
+            },
+            "designerId": "92bcd1a9-095e-4b45-8d03-7a5b812e6a1a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "couvertAnredeCd"
+            },
+            "designerId": "a622d64d-7788-4cca-aef6-9531e87ca1f7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "geburtsdatum"
+            },
+            "designerId": "4f39709c-51cf-4094-aae2-e644eaa8f9e0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "geschlechtCd"
+            },
+            "designerId": "91afb720-19ed-44e9-b966-37a430a55648"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "kantonCd"
+            },
+            "designerId": "694c9401-9f08-429e-98eb-c68e7b550695"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "korrespondenzAnredeCd"
+            },
+            "designerId": "ed19d15c-c9ec-4794-8969-b008e1929aab"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "korrespondentSpracheCd"
+            },
+            "designerId": "2314a0ff-4367-4a52-b8ab-cd10428ffa58"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "kundenArtCd"
+            },
+            "designerId": "b8ff3a3c-a00a-4473-8b10-b514af0b2013"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "landCd"
+            },
+            "designerId": "c2e76063-2d03-42cb-83fc-16a681f4046a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nationalitaetCd"
+            },
+            "designerId": "2f6817a4-ced4-41a6-9492-39a6ba0ea069"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ort"
+            },
+            "designerId": "9d1a8fe3-465d-4933-8e80-c156155410ff"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "partnerId"
+            },
+            "designerId": "0808f8fd-330f-40a3-bd45-9cb6f7003d36"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "partnerName"
+            },
+            "designerId": "b5b05a61-5533-4afa-acca-63a668bb182d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "partnerVorname"
+            },
+            "designerId": "b40a9ecb-a0b5-47db-9773-021da4317605"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "plz"
+            },
+            "designerId": "c726c6a9-1430-416f-bf85-b7bd663b1996"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "strasseName"
+            },
+            "designerId": "f59b236b-1d74-4d7c-bab0-d2532f0376bb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "strasseNr"
+            },
+            "designerId": "2e7a912b-5220-4ce8-9b6d-f65d5dd3d554"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "titelAdelCd"
+            },
+            "designerId": "8a99a642-c330-4a81-ab6c-d353c602377c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "titelSupplCd"
+            },
+            "designerId": "647c3626-da27-430c-ac4c-4b85b1047a36"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zivilstandCd"
+            },
+            "designerId": "a1c942d1-884a-41cb-acfc-aef9fb210e78"
+        }
+    ]
+}
