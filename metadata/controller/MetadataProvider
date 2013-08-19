@@ -88,7 +88,7 @@
                     "var valueRanges = property.valueRanges();",
                     "",
                     "for(var i = 0; i < valueRanges.data.all.length; i++) {",
-                    "    var code = valueRanges.data.all[i].getCodeTable().codes().findRecord('key', codeValue);",
+                    "    var code = valueRanges.data.all[i].getCodeTable().codes().findRecord('key', key);",
                     "",
                     "    if(code !== null) {",
                     "        var text = code.texts().findRecord('tag', 'long');",

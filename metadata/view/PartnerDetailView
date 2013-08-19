@@ -22,7 +22,7 @@
             "codeClass": null,
             "userConfig": {
                 "cls": [
-                    "PartnerDetailView.angabenZurPerson"
+                    "$M.PartnerDetailView.angabenZurPerson"
                 ],
                 "title": "$M.PartnerDetailView.angabenZurPerson"
             },
@@ -281,7 +281,7 @@
             "codeClass": null,
             "userConfig": {
                 "cls": [
-                    "PartnerDetailView.kundenadresse"
+                    "$M.PartnerDetailView.kundenadresse"
                 ],
                 "title": "$M.PartnerDetailView.kundenadresse"
             },
@@ -396,7 +396,7 @@
             "codeClass": null,
             "userConfig": {
                 "cls": [
-                    "PartnerDetailView.kontaktdaten"
+                    "$M.PartnerDetailView.kontaktdaten"
                 ],
                 "title": "$M.PartnerDetailView.kontaktdaten"
             },
