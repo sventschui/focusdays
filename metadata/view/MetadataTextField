@@ -34,9 +34,7 @@
                     "    self.setLabel(MetadataProvider.getLabelForElement(self));",
                     "};",
                     "",
-                    "updateLabel();",
-                    "",
-                    "MetadataProvider.addListener('change', updateLabel);"
+                    "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
             "designerId": "f34ff76e-26c3-4fb7-b468-0550f2d5adab"

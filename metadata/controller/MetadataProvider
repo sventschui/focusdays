@@ -202,7 +202,7 @@
             "designerId": "9f7198de-e735-48d2-bb63-15190abe4748"
         },
         {
-            "type": "basicfunction",
+            "type": "staticfunction",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -237,8 +237,7 @@
                     "",
                     "return null;"
                 ]
-            },
-            "designerId": "2e331fa7-ce87-44dc-afb5-ec74a14267a4"
+            }
         }
     ]
 }

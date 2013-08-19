@@ -8,7 +8,8 @@
     "userConfig": {
         "id": "partnerDetail",
         "designer|userClassName": "PartnerDetailView",
-        "designer|userAlias": "partnerDetail"
+        "designer|userAlias": "partnerDetail",
+        "scrollable": "vertical"
     },
     "designerId": "82b49327-8792-4091-a9ad-da6b8e0e0e91",
     "cn": [

@@ -22,8 +22,6 @@
             "userConfig": {
                 "fn": "initialize",
                 "implHandler": [
-                    "console.log('123');",
-                    "",
                     "this.callParent();",
                     "",
                     "var MetadataProvider = Partner.controller.MetadataProvider;",

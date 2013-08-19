@@ -22,7 +22,7 @@
             "codeClass": null,
             "userConfig": {
                 "implHandler": [
-                    "<div>{partnerName} {partnerVorname}</div>"
+                    "<div>{partnerName}<tpl if=\"partnerVorname\"> {partnerVorname}</tpl><tpl if=\"geburtsdatum != '' \"> {geburtsdatum}</tpl> {strasse} {strasseNr} {plz} {ort}</div>"
                 ],
                 "designer|displayName": "itemTpl"
             },

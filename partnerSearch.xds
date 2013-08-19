@@ -1,8 +1,8 @@
 {
     "name": "partnerSearch",
     "settings": {
-        "urlPrefix": "http://focusdays/",
-        "exportPath": "C:/xampp/htdocs/partnerSearchNew/focusdays",
+        "urlPrefix": "http://localhost:8080/focusdays2013-senchatouch",
+        "exportPath": "C:/developer/workspaces/focusdays/focusdays2013-senchatouch/WebContent",
         "sdkPath": "/Users/sven/Documents/workspace/sencha/touch/touch-2.2.1",
         "spacesToIndent": 4,
         "lineEnding": "LF",
@@ -266,11 +266,10 @@
     "viewOrderMap": {
         "view": [
             "b2f41405-c061-41ac-b729-aee8f934ea27",
+            "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b",
             "00bb2db2-66d2-49a1-b3ae-f02f89bc38ce",
             "6610b108-799f-4ec9-812d-8b0105b57741",
             "2d898c55-4ec5-4f4e-b5e6-766f1f3a41bd",
-            "a91ee4c1-41e4-4338-a5b5-c425010453ac",
-            "d9c0b0eb-48e9-45db-ac1f-d52c7aadb97e",
             "82b49327-8792-4091-a9ad-da6b8e0e0e91",
             "0bebeae3-2c43-4c18-9728-0b788e96da1b",
             "9dc1cb47-735f-44f9-a670-ebf4b1eb8f2b"

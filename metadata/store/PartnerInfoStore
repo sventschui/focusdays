@@ -63,7 +63,7 @@
                             "item"
                         ],
                         "implHandler": [
-                            "return item.get('partnerName').substring(0,1);"
+                            "return item.get('partnerName').substring(0,5);"
                         ]
                     },
                     "designerId": "a95e5178-d7bf-4dd9-97eb-875419b5e6a6"

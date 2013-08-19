@@ -57,7 +57,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "geburtsdatum",
-                "type": "date"
+                "type": "string"
             },
             "designerId": "cb06605a-6e98-4e1d-a4d5-5b5cdc19986e"
         },
@@ -109,7 +109,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "partnerTyp",
-                "type": "string"
+                "type": "int"
             },
             "designerId": "d2d034d7-5186-4cc6-875d-dbd098eb37d1"
         },
@@ -135,7 +135,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "plz",
-                "type": "string"
+                "type": "int"
             },
             "designerId": "ebde618e-b585-4e8e-89fc-3998ad22d46e"
         },
@@ -161,7 +161,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "strasseNr",
-                "type": "string"
+                "type": "int"
             },
             "designerId": "1c2dc4f5-de52-4114-8844-7644065cfde0"
         },
