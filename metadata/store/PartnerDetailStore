@@ -1,0 +1,44 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "PartnerDetailModel",
+        "storeId": "MyJsonPStore",
+        "designer|userClassName": "PartnerDetailStore"
+    },
+    "designerId": "e9c7b156-9bd0-4775-8981-044d92008f9b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PartnerDetailProxy",
+                "url": "http://localhost:8080/json-restlet-example-web/json-random/get2"
+            },
+            "designerId": "eafaed41-f709-49bf-b9af-5597cd563ab5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "response.partnerDetail",
+                        "designer|displayName": "PartnerDetailReader"
+                    },
+                    "designerId": "8e8ffc53-e99c-4a5d-9da7-4b344667fd5f"
+                }
+            ]
+        }
+    ]
+}
