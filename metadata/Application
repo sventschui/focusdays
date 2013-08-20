@@ -34,7 +34,6 @@
             "Master",
             "IntroSplash",
             "RecentPartnerList",
-            "MetadataUrlField"
         ],
         "requires": [
             "Partner.controller.MetadataProvider",
