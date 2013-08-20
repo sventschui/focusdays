@@ -103,22 +103,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": null,
-                        "labelCls": "$M.PoPartnerDetail.titel",
-                        "name": "titelSupplCd",
-                        "readOnly": true
-                    },
-                    "designerId": "f59c0183-9816-48cc-aa16-a4b362dd75bb",
-                    "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
-                },
-                {
-                    "type": "linkedinstance",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "id": null,
                         "labelCls": "$M.PoPartnerDetail.couvertAnredeCd",
                         "name": "couvertAnredeCd",
                         "readOnly": true
@@ -411,13 +395,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": null,
-                        "itemId": null,
-                        "label": null,
                         "labelCls": "$M.PoPartnerDetail.telefonPrivat",
-                        "name": "telefonPrivat.string",
+                        "name": "telefonPrivat",
                         "readOnly": true
                     },
-                    "designerId": "0a7a9d90-768a-486c-8882-8c1b14641da0",
+                    "designerId": "3b8f2e2e-6588-48f9-8840-6701f6c585b9",
                     "masterInstanceId": "a91ee4c1-41e4-4338-a5b5-c425010453ac"
                 }
             ]
@@ -438,14 +420,10 @@
                     "var SettingsProvider = Partner.controller.SettingsProvider;",
                     "",
                     "var self = this;",
-                    "",
                     "var updateLabels = function () {",
-                    "",
                     "    Ext.each(self.innerItems, function(item) {",
                     "        item.setTitle(MetadataProvider.getLabelForElement(item));",
-                    "",
                     "    });",
-                    "",
                     "};",
                     "",
                     "updateLabels();",

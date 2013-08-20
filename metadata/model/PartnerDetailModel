@@ -1,4 +1,3 @@
-
 {
     "type": "Ext.data.Model",
     "reference": {
@@ -274,6 +273,18 @@
                 "name": "zivilstandCd"
             },
             "designerId": "a1c942d1-884a-41cb-acfc-aef9fb210e78"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "telefonPrivat"
+            },
+            "designerId": "8ae17a96-382b-4390-a292-45cc848aefa3"
         }
     ]
 }

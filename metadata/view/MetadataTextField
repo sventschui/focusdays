@@ -33,7 +33,7 @@
                     "var updateLabel = function () {",
                     "    self.setLabel(MetadataProvider.getLabelForElement(self));",
                     "};",
-                    "",
+                    "updateLabel();",
                     "Partner.controller.MetadataProvider.addListener('change', updateLabel);"
                 ]
             },
@@ -59,6 +59,14 @@
                     "console.log('setValue', val, codeTranslated);",
                     "if(codeTranslated !== null) {",
                     "    val = codeTranslated;",
+                    "} else {",
+                    "    if (Partner.controller.MetadataProvider.hasCodeForElement(self)) {",
+                    "        if (val === \"0\" || val === 0) {",
+                    "            val = \"\";",
+                    "        } else {",
+                    "            val = \"[\"+val+\"]\";",
+                    "        }",
+                    "    }",
                     "}",
                     "",
                     "this.callParent([val]);"

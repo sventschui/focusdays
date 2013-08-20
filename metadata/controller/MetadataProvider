@@ -118,6 +118,40 @@
             },
             "codeClass": null,
             "userConfig": {
+                "fn": "hasCodeForElement",
+                "designer|params": [
+                    "element"
+                ],
+                "implHandler": [
+                    "var property = this.getPropertyForElement(element);",
+                    "",
+                    "if(!property) {",
+                    "    return false;",
+                    "}",
+                    "",
+                    "var valueRanges = property.valueRanges();",
+                    "",
+                    "for(var i = 0; i < valueRanges.data.all.length; i++) {",
+                    "    var codes = valueRanges.data.all[i].getCodeTable().codes();",
+                    "",
+                    "    if(codes !== null) {",
+                    "        return true;",
+                    "    }",
+                    "}",
+                    "",
+                    "return false;"
+                ]
+            },
+            "designerId": "cb7e595e-2110-4a20-909d-8cba6cc4b429"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "fn": "getLabelForElement",
                 "designer|params": [
                     "element"
